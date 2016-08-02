@@ -1,13 +1,15 @@
 <?php 
 
 require_once 'inc/connect.php';
+include_once '../inc/header.php';
 
 $error = []; // array
 $post = []; // array
 $showErrors = false; // Par défaut, on ne veut pas afficher les erreurs
 $success = false; 
-$msgOk = 'Le contact a bien été rajouté';
+$msgOk = 'La rélisation a bien été rajoutée';
 $msgError = 'Une erreur malencontreuse s\'est produite';
+$nomFichier = ''; 
 
 if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
 // On recréer le tableau en le nettoyant des espaces vides et balises HTML
@@ -17,15 +19,28 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     if(empty($post['title'])){
     $error[] = 'il faut donner un titre'; 
     } 
-    if(empty($post['image'])){
-    $error[] = 'il faut mettre une image';
-    }
     if(empty($post['content'])){
     $error[] = 'il faut écrire un texte';
     }
-
-    if(empty($post['link'])){
+    if(empty($post['url'])){
     $error[] = 'il faut mettre un lien';
+    }
+
+    /*** Traitement chargement de l'image ***/ 
+
+    $folder = '../img/';  
+    /*S'il y a un slash (/) initial, cherchera le dossier à la racine du site web (localhost). Sinon, cherchera dans le dossier courant*/
+    if(!empty($_FILES) && isset($_FILES['image'])){
+
+        $nomFichier = $_FILES['image']['name']; // Récupère le nom de mon fichier
+        $tmpFichier = $_FILES['image']['tmp_name']; // Stockage temporaire du fichier
+        $newFichier = $folder.$nomFichier; // Créer une chaine de caractère contenant le nom du dossier de destination et le nom du fichier final
+        if(move_uploaded_file($tmpFichier, $newFichier)){
+            $success = 'Fichier image envoyé !' ;
+        }
+        else {
+            $error = 'Erreur lors de l\'envoi du fichier';
+        }      
     }
 
     if(count($error) > 0){
@@ -34,10 +49,10 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     }
     else {
         
-    $res = $db->prepare('INSERT INTO achievements (title, image, link, content)VALUES(:title, :image, :link, :content)');
+    $res = $db->prepare('INSERT INTO achievements (title, image, url, content, date_add) VALUES(:title, :image, :url, :content, NOW())');
     $res->bindValue(':title', $post['title']);
-    $res->bindValue(':image', $post['image']);
-    $res->bindValue(':link', $post['link']);
+    $res->bindValue(':image', $nomFichier); //envoi vers le dossier img
+    $res->bindValue(':url', $post['url']);
     $res->bindValue(':content', $post['content']);
   
     if($res->execute()){ // Si la requete s'execute correctement
@@ -64,27 +79,31 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
             echo $msgOk;
         }
     ?>  
-    <form method="POST">
-        <label for="title">Titre</label>
-        <input type="text" name="title" id="title" placeholder="Votre titre...">
-
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title"> Titre </label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Votre titre..">
+        </div>
         <br>
-        <label for="image">Image</label>
-        <input type="text" name="image" id="image" placeholder="Votre image...">
-
+        <div class="form-group">
+            <label for="image"> Image </label>
+            <input type="file" name="image" id="image" placeholder="Votre image...">
+            <p class="help-block">Charger votre image ici..</p>
+        </div>
         <br>
-        <label for="link">Lien</label>
-        <input type="text" name="link" id="link" placeholder="Votre lien...">
-
+        <div class="form-group">
+            <label for="url"> Lien </label>
+            <input type="text" class="form-control" name="url" id="url" placeholder="Votre lien ici..">
+        </div>
         <br>
-        <label for="content">Texte</label>
-        <input type="text" name="content" id="content" placeholder="texte">
-
+        <div class="form-group">
+            <label for="content"> Texte </label>
+            <textarea class="form-control" rows="3" name="content" id="content" placeholder="Votre texte ici..."></textarea>
+        </div>
         <br>
-        <input type="submit" value="Envoyer">
-
-      </form>
-    </body>
+        <button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
+    </form>
 
 </body>
+
 </html>
