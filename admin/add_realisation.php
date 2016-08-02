@@ -33,12 +33,12 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     $showErrors = true;
     }
     else {
-    $res = $db->prepare('INSERT INTO achievements (title, image, content, link) VALUES(:title, :image, :content, :link');
-
+        
+    $res = $db->prepare('INSERT INTO achievements (title, image, link, content)VALUES(:title, :image, :link, :content)');
     $res->bindValue(':title', $post['title']);
     $res->bindValue(':image', $post['image']);
-    $res->bindValue(':content', $post['content']);
     $res->bindValue(':link', $post['link']);
+    $res->bindValue(':content', $post['content']);
   
     if($res->execute()){ // Si la requete s'execute correctement
         $success = true;
