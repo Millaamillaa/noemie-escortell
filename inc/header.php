@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Noemie-escortell</title>
     <!-- font -->
-    
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- BOOTSRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!-- mon css -->
@@ -23,21 +25,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Noemie Escortell</a>
+                <a class="navbar-brand" href="index.php"><i class="fa fa-home" aria-hidden="true"></i></a>
             </div>  
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A propos <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Présentation</a></li>
-                        <li><a href="#">Parcours</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="presentation.php">Présentation</a></li>
+                        <li><a href="parcours.php">Parcours</a></li>
+                        <li><a href="contactme.php">Contact</a></li>
                     </ul>                
                 </li>
-                <li><a href="#">Prestations</a></li>
-                <li><a href="#">Démarches</a></li>
+                <li><a href="prestations.php">Prestations</a></li>
+                <li><a href="demarches.php">Démarches</a></li>
                 <li><a href="realisations.php">Réalisations</a></li>
-                <li><a href="#">Paternaires</a></li>
+                <li><a href="partenaires.php">Paternaires</a></li>
             </ul>
         </div><!-- /.container-fluid -->
     </nav>

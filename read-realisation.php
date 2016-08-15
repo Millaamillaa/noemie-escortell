@@ -14,7 +14,7 @@ require_once 'inc/connect.php';
 
 	if(!empty($_GET)){
 		if(isset($idRealisation)){
-		// Prépare et execute la requète SQL pour récuperer notre article de manière dynamique
+		// Prépare et execute la requète SQL pour récuperer notre realisation de manière dynamique
 		$res = $db->prepare('SELECT * FROM achievements WHERE id = :idRealisation');
 		$res->bindParam(':idRealisation', $idRealisation, PDO::PARAM_INT);
 		$res->execute();

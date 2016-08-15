@@ -3,9 +3,9 @@ include_once 'inc/header.php';
 require_once 'inc/connect.php'; 
 ?>
 
-   <h1 class="text-center"> Mes réalisations </h1>
+<h1 class="text-center"> Mes réalisations </h1>
 
-    <?php  
+<?php  
     $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add ASC');
     $res->execute();
 
@@ -32,5 +32,5 @@ foreach($realisations as $real){
 	
 	echo '</div>';
 }
-
+include_once 'inc/footer.php';
 ?>
