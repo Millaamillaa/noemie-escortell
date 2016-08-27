@@ -6,9 +6,9 @@
   </head>
   <body>
 
-  <h1><a href="add_realisation.php">Ajouter des réalisations</a></h1>
-  <h1> Modifier des réalisations </h1>
-  <h1> Supprimer des réalisations </h1>
+  <p><a href="add_realisation.php">Ajouter des réalisations</a></p>
+  <p><a href="edit_realisation.php">Modifier des réalisations</a></p>
+  <p><a href="delete_realisation.php">Supprimer des réalisations</a></p>
 
 
   </body>

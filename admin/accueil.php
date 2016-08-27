@@ -12,7 +12,7 @@
 	<h2>Listes des modifications possibles</h2>
 
 	<p><a href="realisations.php">Mes réalisations</a></p>
-	<p><a href="#">Mes partenaires</a></p>
+	<p><a href="">Mes partenaires</a></p>
 	<p><a href="#">Mon cv</a></p>
 	<p><a href="#">Mes coordonnées</a></p>
 

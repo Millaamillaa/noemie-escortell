@@ -7,8 +7,6 @@ $error = []; // array
 $post = []; // array
 $showErrors = false; // Par défaut, on ne veut pas afficher les erreurs
 $success = false; 
-$msgOk = 'La rélisation a bien été rajoutée';
-$msgError = 'Une erreur malencontreuse s\'est produite';
 $nomFichier = ''; 
 
 if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
@@ -70,14 +68,19 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
   </head>
   <body>
     <?php 
-        if($showErrors){
-            echo $msgError .' <br />';
-            echo implode(' <br />', $error);
+        if(isset($showErrors) && $showErrors == true){
+            // Afficher mes erreurs
+            echo '<div class="alert alert-danger"><ul>';
+            foreach($error as $err){
+                echo '<li>'.$err.'</li>';
+            }
+            echo '</ul></div>';
+        }
 
+        if(isset($success) && $success == true){
+            echo '<p style="color:green"> Envoyé !</p>';
         }
-        if($success){
-            echo $msgOk;
-        }
+       
     ?>  
     <form method="POST" enctype="multipart/form-data">
         <div class="form-group">
