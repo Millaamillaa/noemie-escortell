@@ -37,7 +37,7 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
             $success = 'Fichier image envoyé !' ;
         }
         else {
-            $error = 'Erreur lors de l\'envoi du fichier';
+            $error[] = 'Erreur lors de l\'envoi du fichier';
         }      
     }
 
