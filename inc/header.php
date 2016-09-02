@@ -41,7 +41,7 @@
                 <li><a href="realisations.php">Réalisations</a></li>
                 <li><a href="partenaires.php">Paternaires</a></li>
             </ul>
-        </div><!-- /.container-fluid -->
+        </div><!-- /container-fluid -->
     </nav>
 
    <main>

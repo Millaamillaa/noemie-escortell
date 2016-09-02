@@ -1,6 +1,12 @@
-* {
+
+.nomargin{
 	margin: 0;
-	padding: 0;
+}
+
+@font-face { /* Définition d'une nouvelle police nommée OstrichSans-Heavy*/
+    font-family: 'OstrichSans-Heavy';
+    src: url('font/OstrichSans-Heavy.otf');
+    src: url('font/OstrichSans-Heavy') format('otf'),
 }
 
 /******************
@@ -12,9 +18,51 @@
 }
 
 /******************
-	logo
+	bloc 1
 ******************/
+#bloc1{
+	background-color: white;
+	height: 28em;
+}
 
+.paillettesgauche{
+	padding-left: 0;
+}
+
+.noemie{
+	margin: auto;
+	text-align: center;
+}
+
+/******************
+	bloc 2
+******************/
+#bloc2{
+	background-color: #F3EFEB;
+	height: 28em;
+}
+
+.textbloc2{
+	text-align: center;
+	font-family: OstrichSans-Heavy;
+	font-size: 20pt;
+	float: none;
+	margin: 0 auto;
+}
+
+.textsuite{
+	text-align: center;
+	font-family: OstrichSans-Heavy;
+	font-size: 1em;
+	float: none;
+	margin: 0 auto;
+}
+
+.paillettesdroite{
+	padding-right: 0;
+	float: right;
+	text-align: right;
+}
 
 
 /******************
