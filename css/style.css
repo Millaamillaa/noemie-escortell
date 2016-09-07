@@ -1,7 +1,71 @@
+/*Fichier CSS*/
+
+@charset "UTF-8";
+
+/*Pour s'assurer que l'encodage des feuilles de style externes suit bien la norme UTF8*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Couleurs dimentionnement positionnement des différents blocs*/
+
+html,
+body {
+    height: 100%;
+}
 
 .nomargin{
 	margin: 0;
 }
+
+@media print {
+    #menu,
+    #footer {
+        display: none;
+    }
+    body {
+        font-size: 120%;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bloc {
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .bloc {
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .col {
+        width: calc(98%/3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col {
+        width: calc(98%/5);
+    }
+}
+
+.col {
+    display: inline-block;
+  
+}
+
+/******************
+        font
+*******************/
 
 @font-face { /* Définition d'une nouvelle police nommée OstrichSans-Heavy*/
     font-family: 'OstrichSans-Heavy';
@@ -39,30 +103,86 @@
 ******************/
 #bloc2{
 	background-color: #F3EFEB;
-	height: 28em;
+	background-image:url(../img/p1-paillette-droite.png);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	height: 23em;
 }
 
 .textbloc2{
+	margin: 0 auto;
 	text-align: center;
 	font-family: OstrichSans-Heavy;
 	font-size: 20pt;
 	float: none;
-	margin: 0 auto;
 }
 
-.textsuite{
+.textsuite{  
+	margin: 0 auto;
 	text-align: center;
-	font-family: OstrichSans-Heavy;
-	font-size: 1em;
+	
+	font-size: 12pt;
 	float: none;
-	margin: 0 auto;
 }
 
-.paillettesdroite{
-	padding-right: 0;
-	float: right;
-	text-align: right;
+/******************
+	bloc 3
+******************/
+#bloc3{
+	background-image:url(../img/p2-background.jpg);
+	background-repeat: no-repeat;
+	height: 40em;
+	width: 100%;
+	background-size: cover;
 }
+
+.textbloc3{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20pt;
+	float: none;
+	color: white;
+} 
+
+.imgbloc3{
+	margin-top: 12em;
+}
+
+#separateurorange{ 
+background-image:url(../img/p2-barre-orange.png); 
+background-size: cover;
+height: 0.8em;
+}
+
+/******************
+	bloc 4
+******************/
+
+#bloc4{
+	height: 28em;
+	background-image:url(../img/p3-paillettegauche.png), url(../img/p3-paillette-droite.png); 
+	background-position: 0% 0%, 100% 0%;
+	background-repeat: no-repeat;	
+}
+
+
+
+.titlebloc4{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.imgbloc4{
+	margin-top: 4em;
+}
+
+.textbloc4{
+	color: orange;
+	font-size: 14pt;
+}
+
+
 
 
 /******************
