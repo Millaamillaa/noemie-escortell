@@ -4,9 +4,13 @@
 
 /*Pour s'assurer que l'encodage des feuilles de style externes suit bien la norme UTF8*/
 
+/******************
+    la totale
+*******************/
+
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -46,22 +50,6 @@ body {
     }
 }
 
-@media screen and (min-width: 800px) {
-    .col {
-        width: calc(98%/3);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .col {
-        width: calc(98%/5);
-    }
-}
-
-.col {
-    display: inline-block;
-  
-}
 
 /******************
         font
@@ -73,6 +61,7 @@ body {
     src: url('font/OstrichSans-Heavy') format('otf'),
 }
 
+
 /******************
 	navbar
 ******************/
@@ -81,21 +70,23 @@ body {
 	background-color: white;
 }
 
+.navbar-default{
+    padding: 1em;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
 /******************
 	bloc 1
 ******************/
 #bloc1{
 	background-color: white;
+	background-image:url(../img/p1-paillette-gauche.png);
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
 	height: 28em;
-}
-
-.paillettesgauche{
-	padding-left: 0;
-}
-
-.noemie{
-	margin: auto;
-	text-align: center;
 }
 
 /******************
@@ -120,9 +111,18 @@ body {
 .textsuite{  
 	margin: 0 auto;
 	text-align: center;
-	
 	font-size: 12pt;
 	float: none;
+}
+
+.col {
+    display: inline-block;
+  
+}
+
+.column {
+	padding-top: 1em;
+    text-align: center;
 }
 
 /******************
@@ -138,14 +138,19 @@ body {
 
 .textbloc3{
 	margin: 0 auto;
-	text-align: center;
-	font-size: 20pt;
-	float: none;
+	text-align: center !important;
+	font-size: 2em;
 	color: white;
 } 
 
 .imgbloc3{
 	margin-top: 12em;
+}
+
+.line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #separateurorange{ 
@@ -158,29 +163,40 @@ height: 0.8em;
 	bloc 4
 ******************/
 
+.titlebloc{
+	font-size: 20px;
+	text-align: center;
+}
+
 #bloc4{
-	height: 28em;
+	height: 26em;
 	background-image:url(../img/p3-paillettegauche.png), url(../img/p3-paillette-droite.png); 
 	background-position: 0% 0%, 100% 0%;
 	background-repeat: no-repeat;	
-}
-
-
-
-.titlebloc4{
-	font-size: 20px;
-	text-align: center;
-	margin-bottom: 4em;
-}
-
-.imgbloc4{
-	margin-top: 4em;
 }
 
 .textbloc4{
 	color: orange;
 	font-size: 14pt;
 }
+
+.ligneimage{
+	border: 0;
+	align: vertical;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+
+}
+
+.actua{
+	margin-top: 2em;
+}
+
+.endfile{
+	margin-bottom: 5em;
+}
+
 
 
 
@@ -194,3 +210,18 @@ height: 0.8em;
 /******************
 	réalisations
 ******************/
+
+/******************
+	footer
+******************/
+
+.bas{
+	text-align: center;
+    font-size: 23px;
+    background-color: #F3EFEB;
+    padding: 2em;
+    margin-top: 10em;
+    color: black;
+    vertical-align: bottom;
+}
+

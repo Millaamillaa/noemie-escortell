@@ -5,14 +5,9 @@
     <!-- bloc 1-->
 
     <section id="bloc1">
-        <div class="nomargin container">
-            <div class="row">
-                <div class="paillettesgauche col-xs-6 col-sm-5">
-                    <img src="img/p1-paillette-gauche.png" alt="paillettes">
-                </div>
-                <div class="noemie col-xs-6 col-md-5">
-                    <img src="img/p1-logo.png" alt="logo-intro">
-                </div>
+        <div class="column">
+            <div class="col"> 
+                <img src="img/p1-logo.png" alt="logo-intro" class="noemie">
             </div> 
         </div>
     </section>
@@ -20,19 +15,15 @@
 
     <!-- bloc 2-->
     <section id="bloc2">
-        <div class="container">
-            <div class="row">
-                <div class="textbloc2 col-xs-6 col-md-6">
+        <div class="column">
+            <div class="col textbloc2"> 
                     <br>
                     <p> &nbsp; ACCOMPAGNEMENT AU MONTAGE 
                     <br> DE PROJETS EUROPÉENS ET DE COOPÉRATION </p>
-                </div>
                 <br>
-                <div class="textbloc2 col-xs-6 col-md-6">
                     <img src="img/p1-barre-separation.png" alt="separation">
-                </div>
                 <br>
-                <div class="textsuite col-xs-6 col-md-6">     
+                <div class="textsuite">     
                     <p> 
                         <img src="img/triangle-g.png" alt="triangle"> 
                         &nbsp; Coopérer / Innover / Se Développer &nbsp;
@@ -47,16 +38,16 @@
     <section id="bloc3">
         <div class="container">
             <div class="row imgbloc3">
-                <div class="col-xs-6 col-md-8">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
                     <img src="img/p2-barreseparationbold.png" alt="separation">
                 </div>
-                <div class="textbloc3 col-xs-6 col-md-8">
+                <div class="textbloc3 col-xs-12 col-sm-6 col-md-6 col-lg-12 col-lg-offset-3">
                     <br>
                     <p> POUR S'OUVRIR SUR LE MONDE
                     <br> POUR ALLER PLUS LOIN, ENSEMBLE </p>
                     <br>
-                </div>
-                <div class="col-xs-6 col-md-8">
+                 </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
                      <img src="img/p2-barreseparationregular.png" alt="separation">
                 </div> 
             </div>
@@ -66,24 +57,23 @@
     
      <!-- bloc 4-->
     <section id="bloc4">
-        <div class="container">
+        <br>
+        <p class="titlebloc">DERNIÈRES RÉALISATIONS </p>
+        <div class="endfile container">
             <div class="row">
-             <h1 class="titlebloc4">DERNIÈRES RÉALISATIONS </h1>
-
-                <!-- image 1 -->
-                <div class="col">
+                <!-- image 1 --> 
+                <div class="actua col-xs-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="textbloc4">
                         <p> ELABORATION DE STRATÉGIE 
-                            <br> EUROPÉENNE APPUI TECHNIQUE À LA 
-                            <br> RÉDACTION ET AU MONTAGE 
+                            EUROPÉENNE APPUI TECHNIQUE À LA 
+                            RÉDACTION ET AU MONTAGE 
                         </p>
-                     </div>
-                    <img src="img/p3-barre-orange.png" alt="separation">
-                    <img src="img/p3-vignette-1.jpg" alt="vignette">
+                    </div>
+                    <img class="lineimage" src="img/p3-barre-orange.png" alt="separation">
+                    <img class="lineimage" src="img/p3-vignette-1.jpg" alt="vignette">
                 </div>
-
             <!-- image 2 -->
-                <div class="col">
+                <div class="actua col-xs-12 col-sm-9 col-md-6 col-lg-4">
                     <img src="img/p3-vignette-2.jpg" alt="vignette">
                     <img src="img/p3-barre-orange.png" alt="separation">
                     <div class="textbloc4">
@@ -93,9 +83,8 @@
                         </p>
                      </div>
                 </div>
-
-            <!-- image 3 -->
-                <div class="col">
+                <!-- image 3 -->
+                <div class="actua col-xs-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="textbloc4">
                         <p> APPUI TECHNIQUE À L'ÉCRITURE, AU
                             <br> DÉPÔT ET SUIVI ADMINISTRATIF
@@ -107,7 +96,6 @@
             </div>
         </div>
     </section>
-
-
+   
 
 <?php include_once'inc/footer.php'; ?>
