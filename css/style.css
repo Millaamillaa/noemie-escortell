@@ -59,13 +59,14 @@ body {
     font-family: 'OstrichSans-Heavy';
     src: url('font/OstrichSans-Heavy.otf');
     src: url('font/OstrichSans-Heavy') format('otf');
+    font-style: normal
 }
+
 @font-face { /* Définition d'une nouvelle police nommée OstrichSans-Heavy*/
     font-family: 'AvenirLTStd-Book';
     src: url('AvenirLTStd-Book.otf');
     src: url('font/AvenirLTStd-Book') format('otf');
-    src: url('AvenirLTStd-Heavy.otf');
-    src: url('font/AvenirLTStd-Heavy') format('otf');
+   
 }
 
 
@@ -225,8 +226,8 @@ rien = nom de l'emt*/
 }
 
 .textpresta{
-	font-family: AvenirLTStd-Heavy;
-}
+	font-family: AvenirLTStd-Book;
+	}
 
 
 
