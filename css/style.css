@@ -55,19 +55,7 @@ body {
         font
 *******************/
 
-@font-face { /* Définition d'une nouvelle police nommée OstrichSans-Heavy*/
-    font-family: 'OstrichSans-Heavy';
-    src: url('font/OstrichSans-Heavy.otf');
-    src: url('font/OstrichSans-Heavy') format('otf');
-    font-style: normal
-}
 
-@font-face { /* Définition d'une nouvelle police nommée OstrichSans-Heavy*/
-    font-family: 'AvenirLTStd-Book';
-    src: url('AvenirLTStd-Book.otf');
-    src: url('font/AvenirLTStd-Book') format('otf');
-   
-}
 
 
 /******************
@@ -112,8 +100,8 @@ body {
 .textbloc2{
 	margin: 0 auto;
 	text-align: center;
-	font-family: OstrichSans-Heavy;
-	font-size: 20pt;
+	font-family: "OstrichSans-Heavy", sans-serif;
+	font-size: 30pt;
 	float: none;
 }
 
@@ -226,8 +214,14 @@ rien = nom de l'emt*/
 }
 
 .textpresta{
-	font-family: AvenirLTStd-Book;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
 	}
+
+.titlepresta{
+	font-family: "Oswald",sans-serif;
+	font-weight: 400;
+}
 
 
 
