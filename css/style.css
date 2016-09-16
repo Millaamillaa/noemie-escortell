@@ -221,6 +221,16 @@ rien = nom de l'emt*/
 .titlepresta{
 	font-family: "Oswald",sans-serif;
 	font-weight: 400;
+	font-size: 1.4em;
+	margin-top: 1.5em;
+}
+.bigtitlepresta{
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 2.7em;
+}
+.boutonplus{
+	margin-top: 1em;
 }
 
 
