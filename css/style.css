@@ -1,6 +1,5 @@
 /*Fichier CSS*/
 
-
 @charset "UTF-8";
 
 /*Pour s'assurer que l'encodage des feuilles de style externes suit bien la norme UTF8*/
@@ -132,7 +131,7 @@ body {
 #bloc3{
 	background-image:url(../img/p2-background.jpg);
 	background-repeat: no-repeat;
-	height: 40em;
+	height: 60em;
 	width: 100%;
 	background-size: cover;
 }
@@ -158,6 +157,7 @@ body {
 background-image:url(../img/p2-barre-orange.png); 
 background-size: cover;
 height: 0.8em;
+width: 100%;
 }
 
 /******************
@@ -221,7 +221,7 @@ height: 0.8em;
     font-size: 1em;
     background-color: #F3EFEB;
     padding: 2em;
-    margin-top: 14em;
+    margin-top: 12em;
     color: black;
     vertical-align: bottom;
 }

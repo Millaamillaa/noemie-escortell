@@ -38,6 +38,13 @@
     <section id="bloc3">
         <div class="container">
             <div class="row imgbloc3">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
                     <img src="img/p2-barreseparationbold.png" alt="separation">
                 </div>
