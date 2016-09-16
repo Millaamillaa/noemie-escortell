@@ -58,7 +58,14 @@ body {
 @font-face { /* Définition d'une nouvelle police nommée OstrichSans-Heavy*/
     font-family: 'OstrichSans-Heavy';
     src: url('font/OstrichSans-Heavy.otf');
-    src: url('font/OstrichSans-Heavy') format('otf'),
+    src: url('font/OstrichSans-Heavy') format('otf');
+}
+@font-face { /* Définition d'une nouvelle police nommée OstrichSans-Heavy*/
+    font-family: 'AvenirLTStd-Book';
+    src: url('AvenirLTStd-Book.otf');
+    src: url('font/AvenirLTStd-Book') format('otf');
+    src: url('AvenirLTStd-Heavy.otf');
+    src: url('font/AvenirLTStd-Heavy') format('otf');
 }
 
 
@@ -77,6 +84,7 @@ body {
 }
 
 
+/****************************************Acceuil****************************************/
 
 /******************
 	bloc 1
@@ -198,6 +206,27 @@ width: 100%;
 	margin-bottom: 5em;
 }
 
+/****************************************Prestations****************************************/
+/*. = class
+# = id
+rien = nom de l'emt*/
+
+#prestation{
+	text-align: center;
+}
+
+.bigtitlepresta{
+	font-size: 2em;
+	margin: 0;
+}
+
+.prestapicto{
+	margin-top: 5em;
+}
+
+.textpresta{
+	font-family: AvenirLTStd-Heavy;
+}
 
 
 
