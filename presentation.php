@@ -4,8 +4,8 @@ include_once 'inc/header.php';
 
 <!-- bloc 1-->
     <div id="presentation">
-    	<img src="http://www.centremultisportsvaudreuil.com/wp-content/uploads/cerveau.jpg" alt="moi">
-        <p class="titleaboutme"> A propose de moi </p>
+    	<img class="idpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mary_Poppins5.jpg/220px-Mary_Poppins5.jpg" alt="moi">
+        <p class="titleaboutme"> A propos de moi </p>
         <p class="textaboutme"> Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs perspicabilis hanc condidisse Perseus memoratur, Iovis filius et Danaes, vel certe ex Aethiopia profectus Sandan quidam nomine vir opulentus et nobilis et Anazarbus auctoris vocabulum referens, et Mopsuestia vatis illius domicilium Mopsi, quem a conmilitio Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales.
 
 		Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere, P. Scipioni ex multis diebus, quos in vita celeberrimos laetissimosque viderit, illum diem clarissimum fuisse, cum senatu dimisso domum reductus ad vesperum est a patribus conscriptis, populo Romano, sociis et Latinis, pridie quam excessit e vita, ut ex tam alto dignitatis gradu ad superos videatur deos potius quam ad inferos pervenisse.

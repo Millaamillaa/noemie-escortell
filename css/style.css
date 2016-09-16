@@ -226,9 +226,21 @@ rien = nom de l'emt*/
 
 
 
-/******************
-	présentation
-******************/
+/**************************************** Présentation ****************************************/
+
+#presentation{
+	text-align: center;
+	margin: 3em 25em;
+	text-align: justify;
+}
+.idpic{
+	border-radius: 195px 195px 195px 195px;
+-moz-border-radius: 195px 195px 195px 195px;
+-webkit-border-radius: 195px 195px 195px 195px;
+	
+	display: block;
+	margin: 0 auto;
+}
 
 
 
