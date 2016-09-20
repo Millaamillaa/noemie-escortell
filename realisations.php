@@ -2,8 +2,8 @@
 include_once 'inc/header.php';
 require_once 'inc/connect.php'; 
 ?>
-
-<h1 class="text-center"> Mes réalisations </h1>
+        <p class="realtitle"> RÉALISATIONS </p> <br>
+        <img class="align" src="img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
 
 <?php  
     $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add ASC');
@@ -15,7 +15,7 @@ require_once 'inc/connect.php';
 // var_dump($realisation); // Permet de sortir en brut nos realisations
 foreach($realisations as $real){
 	// $real contient chaque entrée de ma table, les colonnes deviennent les clés du tableau
-	echo '<div class="css de lisa">';
+	echo '<div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">';
 	echo '<h2>'.$real['title'].'</h2>';
 	echo '<br>';
     echo '<p>'.$real['url'].'<p>'; //ajouter un href
@@ -32,5 +32,6 @@ foreach($realisations as $real){
 	
 	echo '</div>';
 }
+
 include_once 'inc/footer.php';
 ?>

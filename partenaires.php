@@ -2,10 +2,11 @@
 include_once 'inc/header.php';
 ?>
 <!-- bloc 1-->
-    <section id="bloc1">
-        <p class="titlebloc"> PARTENAIRES </p>
-        <img src="img/p3-vignette-2.jpg" alt="vignette"> <!-- image banderole -->
-        
+    <section id="prestation">
+        <p class="bigtitlepresta"> PARTENAIRES </p>
+       
+        <img src="img/prestation-soulignage-titre.png" alt="vignette">
+        <br><br>
         <div class="container">
             <div class="row">
                 <!-- presta 1 --> 

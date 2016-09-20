@@ -17,16 +17,13 @@
     <section id="bloc2">
         <div class="column">
             <div class="col textbloc2"> 
-                    <br>
-                    <p> &nbsp; ACCOMPAGNEMENT AU MONTAGE 
+                    <p class="spaceb"> &nbsp; ACCOMPAGNEMENT AU MONTAGE 
                     <br> DE PROJETS EUROPÉENS ET DE COOPÉRATION </p>
                     <img src="img/p1-barre-separation.png" alt="separation">
-            
-                <div class="textsuite">     
-                    <p> 
-                        <img src="img/triangle-g.png" alt="triangle"> 
-                        &nbsp; Coopérer / Innover / Se Développer &nbsp;
-                        <img src="img/triangle-d.png" alt="triangle">
+                
+                <div class="textsuite">  
+                    <p class="spaceb"> 
+                        <img src="img/triangle-g.png" alt="triangle"> &nbsp; Coopérer / Innover / Se Développer &nbsp; <img src="img/triangle-d.png" alt="triangle">
                     </p>
                 </div>  
             </div>

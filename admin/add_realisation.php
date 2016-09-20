@@ -76,7 +76,7 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
             }
             echo '</ul></div>';
         }
-
+        
         if(isset($success) && $success == true){
             echo '<p style="color:green"> Envoyé !</p>';
         }

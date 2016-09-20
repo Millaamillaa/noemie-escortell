@@ -101,14 +101,17 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	font-family: "OstrichSans-Heavy", sans-serif;
-	font-size: 26pt;
+	font-size: 20pt;
 	float: none;
+}
+.spaceb{
+	margin: 1.5em 0;
 }
 
 .textsuite{  
 	margin: 0 auto;
 	text-align: center;
-	font-size: 18pt;
+	font-size: 14pt;
 	float: none;
 }
 
@@ -204,11 +207,6 @@ rien = nom de l'emt*/
 	text-align: center;
 }
 
-.bigtitlepresta{
-	font-size: 2em;
-	margin: 0;
-}
-
 .prestapicto{
 	margin-top: 5em;
 }
@@ -225,6 +223,7 @@ rien = nom de l'emt*/
 	margin-top: 1.5em;
 }
 .bigtitlepresta{
+	margin: 0;
 	font-family: "Oswald", sans-serif;
 	font-weight: 400;
 	font-size: 2.7em;
@@ -257,6 +256,19 @@ rien = nom de l'emt*/
 /******************
 	réalisations
 ******************/
+
+.realtitle{
+	margin: 0;
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 2.7em;
+	text-align: center;
+}
+
+.align{
+	display: block;
+	text-align: center;
+}
 
 /******************
 	footer
