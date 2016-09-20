@@ -20,9 +20,8 @@
                     <br>
                     <p> &nbsp; ACCOMPAGNEMENT AU MONTAGE 
                     <br> DE PROJETS EUROPÉENS ET DE COOPÉRATION </p>
-                <br>
                     <img src="img/p1-barre-separation.png" alt="separation">
-                <br>
+            
                 <div class="textsuite">     
                     <p> 
                         <img src="img/triangle-g.png" alt="triangle"> 
@@ -104,5 +103,7 @@
         </div>
     </section>
    
+<?php  
+include_once 'inc/footer.php';
+?>
 
-<?php include_once'inc/footer.php'; ?>
