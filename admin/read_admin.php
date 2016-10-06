@@ -1,9 +1,9 @@
-<?php 
+<?php
 include_once 'inc/header.php';
-require_once 'inc/connect.php'; 
+require_once 'inc/connect.php';
 ?>
-    <p class="realtitle"> RÉALISATIONS </p> <br>
-    <img class="align" src="img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
+	<p class="realtitle"> RÉALISATIONS </p> <br>
+    <img class="align" src="../img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
 
 <?php  
     $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add ASC');
@@ -20,7 +20,7 @@ foreach($realisations as $real){
 	echo '<br>';
     echo '<p>'.$real['url'].'<p>'; //ajouter un href
     echo '<br>';
-    echo '<img class="lisacss" src="img/'.$real['image'].'">';
+    echo '<img class="lisacss" src="../img/'.$real['image'].'">';
     echo '<br>';
     echo '<p class="lisacss">'.substr($real['content'],0, 500).'...</p>';
     echo '<br>';
@@ -28,7 +28,8 @@ foreach($realisations as $real){
 	echo '<br>';
 
 	// En récupérant l'id de la realisation, je peux le passer en GET afin d'avoir un seul et même fichier pour lire chaque realisation individuellement 
-	echo '<p><a class="csslisa" href="read-realisation.php?id='.$real['id'].'"> Voir cette réalisation </a>';
+	echo '<p><a class="csslisa" href="edit_realisation.php?id='.$real['id'].'"> Modifier cette réalisation </a>';
+	echo '<p><a class="csslisa" href="delete_realisation.php?id='.$real['id'].'"> Supprimer cette réalisation </a>';
 	
 	echo '</div>';
 }

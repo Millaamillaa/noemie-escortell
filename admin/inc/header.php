@@ -37,15 +37,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <a class="navbar-brand" href="home.php"><i class="fa fa-home" aria-hidden="true"></i></a>
             </div>  
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Réalisations <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="add_realisation.php"> Ajouter une réalisation </a></li>
-                        <li><a href="delete_realisation.php"> Supprimer une réalisation </a></li>
-                        <li><a href="edit_realisation.php"> Modifier une réalisation </a></li>
+                        <li><a href="read_admin.php"> Modifier/Supprimer une réalisation </a></li>
                     </ul>                
                 </li>
                 <li><a href="edit_info.php"> Modifier mes informations </a></li>

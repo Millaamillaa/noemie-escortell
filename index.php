@@ -77,8 +77,8 @@
                 </div>
             <!-- image 2 -->
                 <div class="actua col-xs-12 col-sm-9 col-md-6 col-lg-4">
-                    <img src="img/p3-vignette-2.jpg" alt="vignette">
-                    <img src="img/p3-barre-orange.png" alt="separation">
+                    <img class="lineimage" src="img/p3-vignette-2.jpg" alt="vignette">
+                    <img class="lineimage" src="img/p3-barre-orange.png" alt="separation">
                     <div class="textbloc4">
                         <p> APPUI TECHNIQUE SUR LA 
                             <br> COMMUNICATION ET LA GESTION 
@@ -93,8 +93,8 @@
                             <br> DÉPÔT ET SUIVI ADMINISTRATIF
                         </p>
                     </div>
-                <img src="img/p3-barre-orange.png" alt="separation">
-                <img src="img/p3-vignette-3.jpg" alt="vignette">
+                <img class="lineimage" src="img/p3-barre-orange.png" alt="separation">
+                <img class="lineimage" src="img/p3-vignette-3.jpg" alt="vignette">
                 </div>
             </div>
         </div>

@@ -109,7 +109,6 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
             <label for="date_add"> Date</label>
             <input type="text" class="form-control" name="date_add" id="datepicker" placeholder="Votre titre..">
         </div>
-
         <button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
     </form>
 
