@@ -1,7 +1,7 @@
 <?php 
 
 require_once 'inc/connect.php';
-include_once '../inc/header.php';
+include_once 'inc/header.php';
 
 $error = []; // array
 $post = []; // array
@@ -47,7 +47,7 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     }
     else {
         
-    $res = $db->prepare('INSERT INTO achievements (title, image, url, content, date_add) VALUES(:title, :image, :url, :content, NOW())');
+    $res = $db->prepare('INSERT INTO achievements (title, image, url, content, date_add) VALUES(:title, :image, :url, :content, NOW()');
     $res->bindValue(':title', $post['title']);
     $res->bindValue(':image', $nomFichier); //envoi vers le dossier img
     $res->bindValue(':url', $post['url']);
@@ -104,9 +104,17 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
             <textarea class="form-control" rows="3" name="content" id="content" placeholder="Votre texte ici..."></textarea>
         </div>
         <br>
+        <!-- le date picker -->
+       <div class="form-group">
+            <label for="date_add"> Date</label>
+            <input type="text" class="form-control" name="date_add" id="datepicker" placeholder="Votre titre..">
+        </div>
+
         <button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
     </form>
 
 </body>
 
 </html>
+
+<?php include_once 'inc/footer.php';?>

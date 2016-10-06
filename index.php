@@ -100,7 +100,5 @@
         </div>
     </section>
    
-<?php  
-include_once 'inc/footer.php';
-?>
+<?php  include_once 'inc/footer.php';?>
 

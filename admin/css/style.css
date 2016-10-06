@@ -1,0 +1,61 @@
+/*Fichier CSS*/
+
+@charset "UTF-8";
+
+/*Pour s'assurer que l'encodage des feuilles de style externes suit bien la norme UTF8*/
+
+/******************
+    la totale
+*******************/
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*Couleurs dimentionnement positionnement des différents blocs*/
+
+html,
+body {
+    height: 100%;
+}
+
+.nomargin{
+	margin: 0;
+}
+
+@media print {
+    #menu,
+    #footer {
+        display: none;
+    }
+    body {
+        font-size: 120%;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bloc {
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .bloc {
+        display: block;
+        clear: both;
+    }
+}
+
+/**
+ 	LE BACK OFFICE
+     * Override feedback icon position
+     * See http://formvalidation.io/examples/adjusting-feedback-icon-position/
+ 	 */
+    #eventForm .form-control-feedback {
+        top: 0;
+        right: -15px;
+    }

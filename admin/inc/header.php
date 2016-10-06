@@ -8,6 +8,8 @@
     
     <!-- font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Include Bootstrap Datepicker -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css"/>
 
 	<!-- BOOTSRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -17,7 +19,12 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 
     <!-- mon css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+   	 <!-- datetime -->
+   	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
 </head>
 <body>
     <nav class="blabla navbar navbar-default">
@@ -34,20 +41,17 @@
             </div>  
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A propos <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Réalisations <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="presentation.php">Présentation</a></li>
-                        <li><a href="parcours.php">Parcours</a></li>
-                        <li><a href="contactme.php">Contact</a></li>
+                        <li><a href="add_realisation.php"> Ajouter une réalisation </a></li>
+                        <li><a href="delete_realisation.php"> Supprimer une réalisation </a></li>
+                        <li><a href="edit_realisation.php"> Modifier une réalisation </a></li>
                     </ul>                
                 </li>
-                <li><a href="prestations.php">Prestations</a></li>
-                <li><a href="demarches.php">Démarches</a></li>
-                <li><a href="realisations.php">Réalisations</a></li>
-                <li><a href="partenaires.php">Paternaires</a></li>
+                <li><a href="edit_info.php"> Modifier mes informations </a></li>
+                <li><a href="upload_cv.php"> Modifier mon CV</a></li>
             </ul>
         </div><!-- /container-fluid -->
     </nav>
 
    <main>
-
