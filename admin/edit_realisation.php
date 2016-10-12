@@ -6,7 +6,12 @@ include_once 'inc/header.php';
 $post = array();
 $error = array();
 $displayErr = false;
-$formValid = false;
+$formValid = false; 
+
+// pour les echo dans mon formulaire ne pas perde mes données en cas de rafraîchissement de page
+$title = '';
+$url = '';
+$content = '';
 
 // Permet de s'assurer qu'un paramètre GET est bien été transmis et qu'il est de de type numérique 
 if(isset($_GET['id']) && !empty($_GET['id'])){
@@ -41,7 +46,7 @@ if(isset($idRealisation)){
 	if(count($error) > 0){
 		$displayErr = true;
 	}
-	else {
+	else { 
 		// Ici je suis sur de ne pas avoir d'erreurs, donc je peux faire du traitement.
 		// (title, image, url, content, date_add) VALUES(title, image, url, content, date_add)
 		$res = $db->prepare('UPDATE achievements SET title = :titleReal, image = :imageReal, url = :urlReal, content = :contentReal, date_add = :dateReal WHERE id = :idRealisation');
@@ -54,7 +59,7 @@ if(isset($idRealisation)){
 		$res->bindValue(':imageReal', $post['image'], PDO::PARAM_STR);
 		$res->bindValue(':urlReal', $post['url'], PDO::PARAM_STR);
 		$res->bindValue(':contentReal', $post['content'], PDO::PARAM_STR);
-		$res->bindValue(':dateReal', date('Y-m-d') ,PDO::PARAM_STR);
+		$res->bindValue(':dateReal', date('d/m/Y', strtotime($post['date_add'])) ,PDO::PARAM_STR);
 
 		// retourne un booleen => true si tout est ok, false sinon
 		if($res->execute()){

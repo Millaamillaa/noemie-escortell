@@ -4,7 +4,7 @@ require_once 'inc/connect.php';
 ?>
 	<p class="realtitle"> RÉALISATIONS </p> <br>
     <img class="align" src="../img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
-
+ 
 <?php  
     $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add ASC');
     $res->execute();
