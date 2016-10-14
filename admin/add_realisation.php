@@ -37,7 +37,6 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     }
 
     /*** Traitement chargement de l'image ***/ 
-
     $folder = '../img/';  
     /*S'il y a un slash (/) initial, cherchera le dossier à la racine du site web (localhost). Sinon, cherchera dans le dossier courant*/
     if(!empty($_FILES) && isset($_FILES['image'])){
@@ -61,72 +60,80 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     $url = $post['url'];
     }
     else { 
-        
-    $res = $db->prepare('INSERT INTO achievements (title, image, url, content, date_add) VALUES(:title, :image, :url, :content, :date_add)');
-    $res->bindValue(':title', $post['title']);
-    $res->bindValue(':image', $nomFichier); //envoi vers le dossier img
-    $res->bindValue(':url', $post['url']);
-    $res->bindValue(':content', $post['content']);
-    $res->bindValue(':date_add', $date_add->format('Y-m-d'));
-  
-    if($res->execute()){ // Si la requete s'execute correctement
-        $success = true;
-
+        // Ici je suis sur de ne pas avoir d'erreurs, donc je peux faire du traitement.
+        $res = $db->prepare('INSERT INTO achievements (title, image, url, content, date_add) VALUES(:title, :image, :url, :content, :date_add)');
+        $res->bindValue(':title', $post['title']);
+        $res->bindValue(':image', $nomFichier); //envoi vers le dossier img
+        $res->bindValue(':url', $post['url']);
+        $res->bindValue(':content', $post['content']);
+        $res->bindValue(':date_add', $date_add->format('Y-m-d'));
+      
+        // retourne un booleen => true si tout est ok, false sinon
+        if($res->execute()){ 
+        // Si la requete s'execute correctement
+            $success = true;
+        }
+        else {
+            // Permettra d'afficher les erreurs éventuelles
+            die(print_r($res->errorInfo()));
+        }
     }
-  }
 }
 ?>
 
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Ajouter des réalisations</title>
-  </head>
-  <body>
-    <?php 
-        if(isset($showErrors) && $showErrors == true){
-            // Afficher mes erreurs
-            echo '<div class="alert alert-danger"><ul>';
-            foreach($error as $err){
-                echo '<li>'.$err.'</li>';
-            }
-            echo '</ul></div>';
-        }
+    <h1 class="text-center"> Ajouter des réalisations </h1>
+
+<!-- Si tout est ok, on affiche notre victoire ! -->
+<?php 
+    if(isset($success) && $success == true):
+?>
+    <div class="alert alert-success" role="alert">
+    Cette réalisation a été bien mise à jour.</div>
         
-        if(isset($success) && $success == true){
-            echo '<p style="color:green"> Envoyé !</p>';
+    <div class="form-group">
+        <button onclick="window.location.href='read_admin.php'" class="btn btn-primary">Retour aux réalisation </button>
+    </div>
+
+<?php endif;
+    // Si on a des erreurs, on les affiche
+    if(isset($showErrors) && $showErrors == true){
+        // Afficher mes erreurs
+        echo '<div class="alert alert-danger"><ul>';
+        foreach($error as $err){
+            echo '<li>'.$err.'</li>';
         }
-    ?>  
-    <form method="POST" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="title"> Titre </label>
-            <input type="text" class="form-control" name="title" id="title" placeholder="Votre titre.." value="<?php echo $title; ?>">
-        </div>
-        <br>
-        <div class="form-group">
-            <label for="image"> Image </label>
-            <input type="file" name="image" id="image" placeholder="Votre image...">
-            <p class="help-block">Charger votre image ici..</p>
-        </div>
-        <br>
-        <div class="form-group">
-            <label for="url"> Lien </label>
-            <input type="text" class="form-control" name="url" id="url" placeholder="Votre lien ici.." value="<?php echo $url; ?>">
-        </div>
-        <br>
-        <div class="form-group">
-            <label for="content"> Texte </label>
-            <textarea class="form-control" rows="3" name="content" id="content" placeholder="Votre texte ici..." value="<?php echo $content; ?>"></textarea>
-        </div>
-        <br>
-        <!-- le date picker -->
-       <div class="form-group">
-            <label for="date_add"> Date </label>
-            <input type="text" class="form-control" name="date_add" id="datepicker">
-        </div>
-        <button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
-    </form>
+        echo '</ul></div>';
+    }
+?>  
+<form method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="title"> Titre </label>
+        <input type="text" class="form-control" name="title" id="title" placeholder="Votre titre.." value="<?php echo $title; ?>">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="image"> Image </label>
+        <input type="file" name="image" id="image" placeholder="Votre image...">
+        <p class="help-block">Charger votre image ici..</p>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="url"> Lien </label>
+        <input type="text" class="form-control" name="url" id="url" placeholder="Votre lien ici.." value="<?php echo $url; ?>">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="content"> Texte </label>
+        <textarea class="form-control" rows="3" name="content" id="content" placeholder="Votre texte ici..." value="<?php echo $content; ?>"></textarea>
+    </div>
+    <br>
+    <!-- le date picker -->
+    <div class="form-group">
+        <label for="date_add"> Date </label>
+        <input type="text" class="form-control" name="date_add" id="datepicker">
+    </div>
+    <button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
+</form>
 
 </body>
 

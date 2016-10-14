@@ -1,12 +1,15 @@
 <?php
 require_once 'inc/connect.php';
 include_once 'inc/header.php';
+// var a = (b || c) -> si b == null ou undefined alors on prend c
+// var a = (b == 0) ? b : c -> si b == 0 alors b sinon c
 
 // On instancie nos variables qu'on utilisera plus tard
-$post = array();
-$error = array();
-$displayErr = false;
-$formValid = false; 
+$error = []; // array
+$post = []; // array
+$formValid= false;
+$showErrors = false; 
+$thepick = false; 
 
 // pour les echo dans mon formulaire ne pas perde mes données en cas de rafraîchissement de page
 $title = '';
@@ -30,26 +33,50 @@ if(isset($idRealisation)){
 		foreach($_POST as $key => $value){
 			$post[$key] = trim(strip_tags($value));
 		}
-
 		if(empty($post['title'])){
 		    $error[] = 'il faut donner un titre'; 
 		    } 
 	    if(empty($post['content'])){
 	    	$error[] = 'il faut écrire un texte';
 	    }
-	    
 	     if(empty($post['url'])){
 	    	$error[] = 'il faut mettre un lien';
 	    }
 	}
 
+	/** Gestion de la date **/
+    $date_add = new DateTime();
+    if (!$date_add->createFromFormat('d/m/Y', $post['date_add'])) {
+        $error[] = 'Format de date de réalisation invalide';
+    }
+
+    /*** Traitement chargement de l'image ***/ 
+    $folder = '../img/';  
+    /*S'il y a un slash (/) initial, cherchera le dossier à la racine du site web (localhost). Sinon, cherchera dans le dossier courant*/
+    if(!empty($_FILES) && isset($_FILES['image'])){
+
+        $nomFichier = $_FILES['image']['name']; // Récupère le nom de mon fichier
+        $tmpFichier = $_FILES['image']['tmp_name']; // Stockage temporaire du fichier
+        $newFichier = $folder.$nomFichier; // Créer une chaine de caractère contenant le nom du dossier de destination et le nom du fichier final
+        if(move_uploaded_file($tmpFichier, $newFichier)){
+            $thepick = 'Fichier image envoyé !' ;
+        }
+        else {
+            $error[] = 'Erreur lors de l\'envoi du fichier';
+        }      
+    }
+
 	if(count($error) > 0){
-		$displayErr = true;
-	}
+	// Ici il y a des erreurs on les affichera plus tard
+    $showErrors = true;
+    $title = $post['title'];
+    $content = $post['content'];
+    $url = $post['url'];
+    }
 	else { 
 		// Ici je suis sur de ne pas avoir d'erreurs, donc je peux faire du traitement.
 		// (title, image, url, content, date_add) VALUES(title, image, url, content, date_add)
-		$res = $db->prepare('UPDATE achievements SET title = :titleReal, image = :imageReal, url = :urlReal, content = :contentReal, date_add = :dateReal WHERE id = :idRealisation');
+		$res = $db->prepare('UPDATE achievements SET title = :titleReal, image = :imageReal, url = :urlReal, content = :contentReal, date_add = :date_add WHERE id = :idRealisation');
 
 		// On passe l'id de la Realisation pour ne mettre à jour que la réalisation en cours d'édition (clause WHERE)
 		// On sécurise à noveau en ajoutant intval() 
@@ -59,7 +86,7 @@ if(isset($idRealisation)){
 		$res->bindValue(':imageReal', $post['image'], PDO::PARAM_STR);
 		$res->bindValue(':urlReal', $post['url'], PDO::PARAM_STR);
 		$res->bindValue(':contentReal', $post['content'], PDO::PARAM_STR);
-		$res->bindValue(':dateReal', date('d/m/Y', strtotime($post['date_add'])) ,PDO::PARAM_STR);
+		$res->bindValue(':date_add', $date_add->format('Y-m-d'));
 
 		// retourne un booleen => true si tout est ok, false sinon
 		if($res->execute()){
@@ -72,7 +99,6 @@ if(isset($idRealisation)){
 	}
 }
 	
-
 	// Prépare et execute la requète SQL pour récuperer notre réalisation de manière dynamique
 	$res = $db->prepare('SELECT * FROM achievements WHERE id = :idRealisation');
 	$res->bindParam(':idRealisation', $idRealisation, PDO::PARAM_INT);
@@ -82,35 +108,38 @@ if(isset($idRealisation)){
 	$realisation = $res->fetch(PDO::FETCH_ASSOC);
 ?>
 
+	<h1 class="text-center"> Modifier une réalisation </h1>
 
-<h1 class="text-center"> Modifier une réalisation </h1>
+<!-- Si tout est ok, on affiche notre victoire ! -->
 
-<?php 
-	if($formValid): // Si tout est ok, on affiche notre victoire ! ?>
+<?php if($formValid):?>
 		<div class="alert alert-success" role="alert">
 		Cette réalisation a été bien mise à jour.</div>
 			
 		<div class="form-group">
-            <button onclick="window.location.href='read_admin.php'" class="btn btn-primary">Retour aux réalisation </button>
+            <button onclick="window.location.href='read_admin.php'" class="btn btn-primary">Retour aux réalisations </button>
         </div>
-	<?php endif;
 
-	if($displayErr){ // Si on a des erreurs, on les affiche
+<?php endif;
+	// Si on a des erreurs, on les affiche
+	if(isset($showErrors) && $showErrors == true){ 
 		echo '<div class="alert alert-danger" role="alert"></ul>';
-	        foreach ($errors as $err) {
+	        foreach ($error as $err) {
 	            echo '<li>'. $err . '</li>';
 	        }
 	    echo '</ul></div>';
 	}
 ?>
 
-<form method="POST">
-	<label for="title">Title</label>
-	<input type="text" id="title" name="title" placeholder="Votre titre.." value="<?php echo $realisation['title']; ?>">
+<form method="POST" enctype="multipart/form-data">
+	<div class="form-group">
+		<label for="title">Title</label>
+		<input type="text" id="title" name="title" placeholder="Votre titre.." value="<?php echo $realisation['title']; ?>">
+	</div>
 	<br>
     <div class="form-group">
         <label for="image"> Image </label>
-        <input type="file" name="image" id="image" placeholder="Votre image..." value="<?php echo $realisation['image']; ?>">
+        <input type="file" name="image" id="image" placeholder="Votre image...">
         <p class="help-block">Charger votre image ici..</p>
     </div>
     <br>
@@ -127,7 +156,7 @@ if(isset($idRealisation)){
     <!-- le date picker -->
    	<div class="form-group">
         <label for="date_add"> Date</label>
-        <input type="text" class="form-control" name="date_add" id="datepicker" placeholder="Votre titre.." value="<?php echo $realisation['date_add']; ?>">
+        <input type="text" class="form-control" name="date_add" id="datepicker" placeholder="Votre titre..">
     </div>
 	<button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
 </form>
