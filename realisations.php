@@ -3,8 +3,10 @@ include_once 'inc/header.php';
 require_once 'inc/connect.php'; 
 ?>
     <p class="realtitle"> RÉALISATIONS </p> <br>
-    <img class="align" src="img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
+    <!-- image banderole -->
+    <img class="align" src="img/prestation-soulignage-titre.png" alt="vignette"> 
 
+    <div class="blocgris"> 
 <?php  
     $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add ASC');
     $res->execute();
@@ -16,11 +18,12 @@ require_once 'inc/connect.php';
 foreach($realisations as $real){
 	// $real contient chaque entrée de ma table, les colonnes deviennent les clés du tableau
 	echo '<div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">';
-	echo '<h2>'.$real['title'].'</h2>';
+	echo '<h2t class="textbloc4">'.$real['title'].'</h2>';
 	echo '<br>';
     echo '<p>'.$real['url'].'<p>'; //ajouter un href
     echo '<br>';
-    echo '<img class="lisacss" src="img/'.$real['image'].'">';
+    echo '<img class="lineimage" src="img/p3-barre-orange.png" alt="separation">';
+    echo '<img class="lineimage" src="img/'.$real['image'].'">';
     echo '<br>';
     echo '<p class="lisacss">'.substr($real['content'],0, 500).'...</p>';
     echo '<br>';
@@ -35,3 +38,5 @@ foreach($realisations as $real){
 
 include_once 'inc/footer.php';
 ?>
+   </div>
+ 

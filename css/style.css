@@ -5,7 +5,7 @@
 /*Pour s'assurer que l'encodage des feuilles de style externes suit bien la norme UTF8*/
 
 /******************
-    la totale
+    la totale 
 *******************/
 
 * {
@@ -268,6 +268,17 @@ rien = nom de l'emt*/
 .align{
 	display: block;
 	text-align: center;
+}
+
+#blocblanc{
+	background-color: white;
+	height: 55em;
+}
+
+.blocgris{
+	background-color: #F3EFEB;
+	color: #F3EFEB;
+	height: 55em;
 }
 
 /******************
