@@ -164,13 +164,20 @@ width: 100%;
 	bloc 4
 ******************/
 
+.actua{
+	margin-top: 2em;
+}
+
 .titlebloc{
-	font-size: 20px;
+	font-size: 21px;
 	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
 }
 
 #bloc4{
-	height: 26em;
+	height: 15em;
 	background-image:url(../img/p3-paillettegauche.png), url(../img/p3-paillette-droite.png); 
 	background-position: 0% 0%, 100% 0%;
 	background-repeat: no-repeat;	
@@ -179,19 +186,21 @@ width: 100%;
 .textbloc4{
 	color: orange;
 	font-size: 14pt;
+
 }
 
 .ligneimage{
 	border: 0;
-	align: vertical;
 	padding: 0;
 	margin: 0;
 	display: block;
-
+	width: 100%;
 }
 
-.actua{
-	margin-top: 2em;
+.bloc_orange{
+	width: 100%;
+	height: 0.8em;
+	background-color: orange;
 }
 
 .endfile{
@@ -239,9 +248,14 @@ rien = nom de l'emt*/
 
 #presentation{
 	text-align: center;
-	margin: 3em 25em;
+	margin: 3em 10em;
 	text-align: justify;
 }
+
+.listpresentation{
+	margin-left: 1.5em;
+}
+
 .idpic{
 	border-radius: 195px 195px 195px 195px;
 -moz-border-radius: 195px 195px 195px 195px;
@@ -249,6 +263,12 @@ rien = nom de l'emt*/
 	
 	display: block;
 	margin: 0 auto;
+}
+.textaboutme{
+	font-family: "Arial", sans-serif;
+	font-weight: 200;
+	font-size: 1.5em;
+	color: black;
 }
 
 
@@ -270,15 +290,16 @@ rien = nom de l'emt*/
 	text-align: center;
 }
 
-#blocblanc{
-	background-color: white;
-	height: 55em;
+.textreal{
+	text-align: center;
+	display: block;
 }
 
-.blocgris{
-	background-color: #F3EFEB;
-	color: #F3EFEB;
-	height: 55em;
+/******************
+	contact
+******************/
+.contact{
+	margin: 0 50px;
 }
 
 /******************
@@ -286,12 +307,14 @@ rien = nom de l'emt*/
 ******************/
 
 .bas{
+	height: 5em;
 	text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: #F3EFEB;
     padding: 2em;
-    margin-top: 12em;
+    margin-top: 2em;
     color: black;
     vertical-align: bottom;
 }
+
 

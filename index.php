@@ -49,7 +49,7 @@
                     <p> POUR S'OUVRIR SUR LE MONDE
                     <br> POUR ALLER PLUS LOIN, ENSEMBLE </p>
                     <br>
-                 </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
                      <img src="img/p2-barreseparationregular.png" alt="separation">
                 </div> 
@@ -59,6 +59,7 @@
     <div id="separateurorange"></div>
     
      <!-- bloc 4-->
+     <div>
     <section id="bloc4">
         <br>
         <p class="titlebloc">DERNIÈRES RÉALISATIONS </p>
@@ -67,18 +68,17 @@
                 <!-- image 1 --> 
                 <div class="actua col-xs-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="textbloc4">
-                        <p> ELABORATION DE STRATÉGIE 
+                            ELABORATION DE STRATÉGIE 
                             EUROPÉENNE APPUI TECHNIQUE À LA 
                             RÉDACTION ET AU MONTAGE 
-                        </p>
                     </div>
-                    <img class="lineimage" src="img/p3-barre-orange.png" alt="separation">
-                    <img class="lineimage" src="img/p3-vignette-1.jpg" alt="vignette">
+                    <div class="bloc_orange"> </div>
+                    <img class="lineimage" src="img/p3-vignette-1.jpg" name="image" onmouseover="image.src='img/p3-vignette-2.jpg'" onmouseout="image.src='img/p3-vignette-1.jpg'" alt="vignette" width="100%"/>
                 </div>
             <!-- image 2 -->
                 <div class="actua col-xs-12 col-sm-9 col-md-6 col-lg-4">
-                    <img class="lineimage" src="img/p3-vignette-2.jpg" alt="vignette">
-                    <img class="lineimage" src="img/p3-barre-orange.png" alt="separation">
+                    <img class="lineimage" src="img/p3-vignette-2.jpg" name="secondimage" onmouseover="secondimage.src='img/p3-vignette-3.jpg'" onmouseout="secondimage.src='img/p3-vignette-2.jpg'" alt="vignette" width="100%"/>
+                    <div class="bloc_orange"> </div>
                     <div class="textbloc4">
                         <p> APPUI TECHNIQUE SUR LA 
                             <br> COMMUNICATION ET LA GESTION 
@@ -93,12 +93,13 @@
                             <br> DÉPÔT ET SUIVI ADMINISTRATIF
                         </p>
                     </div>
-                <img class="lineimage" src="img/p3-barre-orange.png" alt="separation">
-                <img class="lineimage" src="img/p3-vignette-3.jpg" alt="vignette">
-                </div>
-            </div>
-        </div>
+                    <div class="bloc_orange"> </div>
+                    <img class="lineimage" src="img/p3-vignette-3.jpg" name="thridimage" onmouseover="thridimage.src='img/p3-vignette-1.jpg'" onmouseout="thridimage.src='img/p3-vignette-3.jpg'" alt="vignette" width="100%"/>
+                </div> <!-- fin de col -->
+            </div> <!-- fin de row -->
+        </div> <!-- fin de container -->
     </section>
-   
+    </div>
+  
 <?php  include_once 'inc/footer.php';?>
 

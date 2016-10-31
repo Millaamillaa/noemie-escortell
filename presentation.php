@@ -5,12 +5,50 @@ include_once 'inc/header.php';
 <!-- bloc 1-->
     <div id="presentation">
     	<img class="idpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mary_Poppins5.jpg/220px-Mary_Poppins5.jpg" alt="moi">
-        <p class="titleaboutme"> A propos de moi </p>
-        <p class="textaboutme"> Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs perspicabilis hanc condidisse Perseus memoratur, Iovis filius et Danaes, vel certe ex Aethiopia profectus Sandan quidam nomine vir opulentus et nobilis et Anazarbus auctoris vocabulum referens, et Mopsuestia vatis illius domicilium Mopsi, quem a conmilitio Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales.
-
-		Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere, P. Scipioni ex multis diebus, quos in vita celeberrimos laetissimosque viderit, illum diem clarissimum fuisse, cum senatu dimisso domum reductus ad vesperum est a patribus conscriptis, populo Romano, sociis et Latinis, pridie quam excessit e vita, ut ex tam alto dignitatis gradu ad superos videatur deos potius quam ad inferos pervenisse.
-
-		Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu. </p>
+        <p class="titleaboutme"> A PROPOS DE MOI </p>
+		    <div class="textaboutme"> 
+			    Très active dans le monde associatif depuis plus de 15 ans, j’ai toujours eu à cœur d’associer un parcours en coordination de projets culturels à une approche de développement local. <br>
+			    Mon intérêt pour les projets innovants, les dynamiques partenariales et l’interculturalité m’a amené à me spécialiser dans les projets européens et de coopération.
+			    <br>
+				Depuis 2015, je propose un service d’accompagnement des porteurs de projets dans l’ingénierie de projets de coopération que ce soit à l’échelle interrégionale ou européenne. Je conçois des plans…
+				<br>
+				Le service que je propose se décline en plusieurs phases 
+				<ul class="listpresentation">
+					<li>
+					diagnostic de la structure, 
+					</li> 
+					<li>
+					appui technique au montage de projet (rédaction, recherche de partenaires, relecture..)
+					</li>
+					<li>
+					appui à la coordination de projet et au suivi administratif
+					</li>
+				</ul>
+				<hr> 
+				Mon expérience et ma connaissance de programmes tels que Education-Formation (Erasmus+), Europe pour les Citoyens, Programme Culture, Jeunesse.. me permettent de guider et former mes partenaires qu’ils soient associations, coopératives ou plus largement les acteurs de l’Economie Sociale et Solidaire dans le montage de projets de coopération.  
+				<hr>
+				+ Lien vers CN.CRESS
+				<br><hr>
+				Je suis…
+				<ul class="listpresentation">
+				 	<li> 
+					  	Entrepreneure-associée au sein de la coopérative CO-ACTIONS 
+						<a href="http://www.co-actions.com/"> http://www.co-actions.com/ </a> 
+					</li>
+					<li>
+						Abeille à La Ruche 
+						<a href="https://www.facebook.com/laruchebordeaux">https://www.facebook.com/laruchebordeaux</a> 
+					</li>
+					<li>
+						Membre du LABA, pôle de compétences aquitain Culture Europe 
+						<a href="http://lelaba.eu/">http://lelaba.eu/</a> 
+					</li>
+					<li>
+						Experte-évaluatrice externe pour l’Agence Erasmus+ Jeunesse 
+						<a href="http://www.erasmusplus-jeunesse.fr/site/">http://www.erasmusplus-jeunesse.fr/site/</a> 
+					</li>
+				</ul>
+			</div>
     </div>
 <?php  
 include_once 'inc/footer.php';
