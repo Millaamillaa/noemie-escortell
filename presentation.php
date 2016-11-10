@@ -4,14 +4,14 @@ include_once 'inc/header.php';
 
 <!-- bloc 1-->
     <div id="presentation">
-    	<img class="idpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mary_Poppins5.jpg/220px-Mary_Poppins5.jpg" alt="moi">
+    	<img class="id" src="img/profil.jpg" alt="moi">
         <p class="titleaboutme"> A PROPOS DE MOI </p>
 		    <div class="textaboutme"> 
 			    Très active dans le monde associatif depuis plus de 15 ans, j’ai toujours eu à cœur d’associer un parcours en coordination de projets culturels à une approche de développement local. <br>
 			    Mon intérêt pour les projets innovants, les dynamiques partenariales et l’interculturalité m’a amené à me spécialiser dans les projets européens et de coopération.
 			    <br>
 				Depuis 2015, je propose un service d’accompagnement des porteurs de projets dans l’ingénierie de projets de coopération que ce soit à l’échelle interrégionale ou européenne. Je conçois des plans…
-				<br>
+				<br><br>
 				Le service que je propose se décline en plusieurs phases 
 				<ul class="listpresentation">
 					<li>
