@@ -7,35 +7,13 @@ $error = []; // array
 $post = []; // array
 $showErrors = false; // Par défaut, on ne veut pas afficher les erreurs
 $success = false; 
-$thepick = false; 
 $nomFichier = '';  
-
-// pour les echo dans mon formulaire ne pas perde mes données en cas de rafraîchissement de page
-$title = '';
-$url = '';
-$content = '';
 
 if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
 // On recréer le tableau en le nettoyant des espaces vides et balises HTML
   foreach($_POST as $key => $value){
     $post[$key] = trim(strip_tags($value));
     }
-    if(empty($post['title'])){
-    $error[] = 'il faut donner un titre'; 
-    } 
-    if(empty($post['content'])){
-    $error[] = 'il faut écrire un texte';
-    }
-    if(empty($post['url'])){
-    $error[] = 'il faut mettre un lien';
-    }
-    
-    /** Gestion de la date **/
-    $date_add = new DateTime();
-    if (!$date_add->createFromFormat('d/m/Y', $post['date_add'])) {
-        $error[] = 'Format de date de réalisation invalide';
-    }
-
     /*** Traitement chargement de l'image ***/ 
     $folder = '../img/';  
     /*S'il y a un slash (/) initial, cherchera le dossier à la racine du site web (localhost). Sinon, cherchera dans le dossier courant*/
@@ -51,23 +29,15 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
             $error[] = 'Erreur lors de l\'envoi du fichier';
         }      
     }
-
     if(count($error) > 0){
     // Ici il y a des erreurs on les affichera plus tard
     $showErrors = true;
-    $title = $post['title'];
-    $content = $post['content'];
-    $url = $post['url'];
     }
     else { 
         // Ici je suis sur de ne pas avoir d'erreurs, donc je peux faire du traitement.
-        $res = $db->prepare('INSERT INTO achievements (title, image, url, content, date_add) VALUES(:title, :image, :url, :content, :date_add)');
-        $res->bindValue(':title', $post['title']);
+        $res = $db->prepare('INSERT INTO cv (image) VALUES(:image)');
         $res->bindValue(':image', $nomFichier); //envoi vers le dossier img
-        $res->bindValue(':url', $post['url']);
-        $res->bindValue(':content', $post['content']);
-        $res->bindValue(':date_add', $date_add->format('Y-m-d'));
-      
+  
         // retourne un booleen => true si tout est ok, false sinon
         if($res->execute()){ 
         // Si la requete s'execute correctement
@@ -80,18 +50,17 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     }
 }
 ?>
-
-    <h1 class="text-center"> Ajouter des réalisations </h1>
+    <h1 class="text-center"> Modifier le CV </h1>
 
 <!-- Si tout est ok, on affiche notre victoire ! -->
 <?php 
     if(isset($success) && $success == true):
 ?>
     <div class="alert alert-success" role="alert">
-    Cette réalisation a été bien mise à jour.</div>
+    Le CV à été bien mise à jour.</div>
         
     <div class="form-group">
-        <button onclick="window.location.href='read_admin.php'" class="btn btn-primary">Retour aux réalisation </button>
+        <button onclick="window.location.href='home.php'" class="btn btn-primary">Retour à l'accueil </button>
     </div>
 
 <?php endif;
@@ -105,34 +74,15 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
         echo '</ul></div>';
     }
 ?>  
-<form method="POST" enctype="multipart/form-data">
-    <div class="form-group">
-        <label for="title"> Titre </label>
-        <input type="text" class="form-control" name="title" id="title" placeholder="Votre titre.." value="<?php echo $title; ?>">
-    </div>
-    <br>
-    <div class="form-group">
-        <label for="image"> Image </label>
-        <input type="file" name="image" id="image" placeholder="Votre image...">
-        <p class="help-block">Charger votre image ici..</p>
-    </div>
-    <br>
-    <div class="form-group">
-        <label for="url"> Lien </label>
-        <input type="text" class="form-control" name="url" id="url" placeholder="Votre lien ici.." value="<?php echo $url; ?>">
-    </div>
-    <br>
-    <div class="form-group">
-        <label for="content"> Texte </label>
-        <textarea class="form-control" rows="3" name="content" id="content" placeholder="Votre texte ici..." value="<?php echo $content; ?>"></textarea>
-    </div>
-    <br>
-    <!-- le date picker -->
-    <div class="form-group">
-        <label for="date_add"> Date </label>
-        <input type="text" class="form-control" name="date_add" id="datepicker">
-    </div>
+<form method="POST" enctype="multipart/form-data"> 
+   	<div class="form-group">
+	    <label for="image"> Image </label>
+	    <input type="file" name="image" id="image" placeholder="Votre image...">
+	    <p class="help-block">Charger votre CV ici..</p>
+	</div>
     <button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
 </form>
+
+<?php include_once 'inc/footer.php';?>
 
 <?php include_once 'inc/footer.php';?>

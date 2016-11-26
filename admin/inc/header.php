@@ -48,7 +48,7 @@
                     </ul>                
                 </li>
                 <li><a href="edit_info.php"> Modifier mes informations </a></li>
-                <li><a href="upload_cv.php"> Modifier mon CV</a></li>
+                <li><a href="edit_resume.php"> Modifier mon CV</a></li>
             </ul>
         </div><!-- /container-fluid -->
     </nav>

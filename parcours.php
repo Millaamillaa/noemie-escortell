@@ -1,5 +1,18 @@
-<?php include_once 'inc/header.php';?>
+<?php 
+include_once 'inc/header.php';
+require_once 'inc/connect.php'; 
 
-<img class="lineimage" src="img/cv.jpg" alt="cv" width="90%"/>
+    $res = $db->prepare('SELECT * FROM cv');
+    $res->execute();
+    // Retourne toutes les entrées de la table "cv" sous forme de tableau array()
+    $result = $res->fetchAll(PDO::FETCH_ASSOC);
 
-<?php include_once 'inc/footer.php';?>
+// var_dump($result); // Permet de sortir en brut nos données
+	foreach($result as $resume){
+		
+		// $resume contient chaque entrée de ma table, les colonnes deviennent les clés du tableau
+	    echo '<img class="" src="img/'.$resume['image'].'">';
+	}
+
+include_once 'inc/footer.php';
+?>
