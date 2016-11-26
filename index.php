@@ -81,8 +81,7 @@
                     <div class="bloc_orange"> </div>
                     <div class="textbloc4">
                         <p> APPUI TECHNIQUE SUR LA 
-                            <br> COMMUNICATION ET LA GESTION 
-                            <br> ADMINISTRATIVE
+                            <br> COMMUNICATION ET LA GESTION ADMINISTRATIVE
                         </p>
                      </div>
                 </div>

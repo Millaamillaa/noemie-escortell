@@ -1,5 +1,5 @@
 <?php 
-
+ 
 require_once 'inc/connect.php';
 include_once 'inc/header.php';
 
@@ -31,10 +31,8 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     }
     
     /** Gestion de la date **/
-    $date_add = new DateTime();
-    if (!$date_add->createFromFormat('d/m/Y', $post['date_add'])) {
-        $error[] = 'Format de date de réalisation invalide';
-    }
+    $date = new DateTime();
+    $date_add = $date->createFromFormat('d/m/Y', $post['date_add']);
 
     /*** Traitement chargement de l'image ***/ 
     $folder = '../img/';  

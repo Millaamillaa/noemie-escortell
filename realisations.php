@@ -1,7 +1,7 @@
 <?php 
 include_once 'inc/header.php';
 require_once 'inc/connect.php'; 
-?>
+?> 
     <p class="realtitle"> RÉALISATIONS </p> <br>
     <!-- image banderole -->
     <img class="align" src="img/prestation-soulignage-titre.png" alt="vignette"> 
@@ -9,7 +9,7 @@ require_once 'inc/connect.php';
     <div class="container">
         <div class="row">
 <?php  
-    $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add ASC');
+    $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add DESC');
     $res->execute();
 
     // Retourne toutes les entrées de la table "achievements" sous forme de tableau array()
@@ -35,7 +35,7 @@ foreach($realisations as $real){
 	echo '</div>'; 
 }
 ?>
-    </div>
+     </div>
     </div>
 <?php 
 include_once 'inc/footer.php';
