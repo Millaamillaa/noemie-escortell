@@ -166,7 +166,15 @@ if(isset($idRealisation)){
     <!-- le date picker -->
    	<div class="form-group">
         <label for="date_add"> Date</label>
-        <input type="text" class="form-control" name="date_add" id="datepicker" placeholder="Votre titre.." value="<?php echo $date_add; ?>">
+        <input type="text" class="form-control" name="date_add" id="datepicker" placeholder="Votre titre.." value="<?php 
+	if(empty($_POST)) {
+		echo $date_add; 
+	}
+	else {
+		echo($_POST['date_add']);
+	}	
+	?>">
+
     </div>
 	<button type="submit" class="btn btn-default" value="Envoyer"> Envoyer </button>
 </form>

@@ -81,7 +81,7 @@
                     <div class="bloc_orange"> </div>
                     <div class="textbloc4">
                         <p> APPUI TECHNIQUE SUR LA 
-                            <br> COMMUNICATION ET LA GESTION ADMINISTRATIVE
+                            COMMUNICATION ET LA GESTION ADMINISTRATIVE
                         </p>
                      </div>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="actua col-xs-12 col-sm-9 col-md-6 col-lg-4">
                     <div class="textbloc4">
                         <p> APPUI TECHNIQUE À L'ÉCRITURE, AU
-                            <br> DÉPÔT ET SUIVI ADMINISTRATIF
+                            DÉPÔT ET SUIVI ADMINISTRATIF
                         </p>
                     </div>
                     <div class="bloc_orange"> </div>
