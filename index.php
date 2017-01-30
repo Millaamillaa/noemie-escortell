@@ -17,7 +17,7 @@
     <section id="bloc2">
         <div class="column">
             <div class="col textbloc2"> 
-                    <p class="spaceb"> &nbsp; ACCOMPAGNEMENT AU MONTAGE 
+                    <p class="spaceb"> &nbsp; ACCOMPAGNEMENT AU MONTAGE
                     <br> DE PROJETS EUROPÉENS ET DE COOPÉRATION </p>
                     <img src="img/p1-barre-separation.png" alt="separation">
                 
@@ -59,10 +59,11 @@
     <div id="separateurorange"></div>
     
      <!-- bloc 4-->
-     <div>
     <section id="bloc4">
         <br>
         <p class="titlebloc">DERNIÈRES RÉALISATIONS </p>
+    </section>
+        <!-- les images en colones -->
         <div class="endfile container">
             <div class="row">
                 <!-- image 1 --> 
@@ -97,8 +98,7 @@
                 </div> <!-- fin de col -->
             </div> <!-- fin de row -->
         </div> <!-- fin de container -->
-    </section>
-    </div>
+    
   
-<?php  include_once 'inc/footer.php';?>
+<?php  require_once 'inc/footer.php';?>
 

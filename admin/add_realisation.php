@@ -8,7 +8,6 @@ $post = []; // array
 $showErrors = false; // Par défaut, on ne veut pas afficher les erreurs
 $success = false; 
 $thepick = false; 
-$nomFichier = '';  
 
 // pour les echo dans mon formulaire ne pas perde mes données en cas de rafraîchissement de page
 $title = '';
@@ -36,6 +35,7 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
 
     /*** Traitement chargement de l'image ***/ 
     $folder = '../img/';  
+    $nomFichier = '';  
     /*S'il y a un slash (/) initial, cherchera le dossier à la racine du site web (localhost). Sinon, cherchera dans le dossier courant*/
     if(!empty($_FILES) && isset($_FILES['image'])){
 
@@ -49,7 +49,7 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
             $error[] = 'Erreur lors de l\'envoi du fichier';
         }      
     }
-
+    
     if(count($error) > 0){
     // Ici il y a des erreurs on les affichera plus tard
     $showErrors = true;
