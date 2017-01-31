@@ -1,7 +1,7 @@
 </main>
 
 <footer class="bas">
-    <p> ® 2016 - Noemie Escortell truc &reg;</p>
+    <p> ® 2016 - Noemie Escortell &reg;</p>
 </footer>
 
 <!--mettre jquery pour les fonction barre nav avant bootsrap : aller sur jquery - google CDN -prendre jQuery 2.x (dernière version)  -->

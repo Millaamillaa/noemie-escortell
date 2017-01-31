@@ -26,9 +26,12 @@ body {
 body {
 	position: relative;
 }
-footer {
-	position: absolute; 
-	bottom: 0; left: 0; right: 0;
+footer { 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin-top: 0.5em;
+
 }
 
 .nomargin{
@@ -47,7 +50,7 @@ footer {
     }
 }
 
-/*@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
     .bloc {
         display: block;
         clear: both;
@@ -59,15 +62,7 @@ footer {
         display: block;
         clear: both;
     }
-}*/
-
-
-/******************
-        font
-*******************/
-
-
-
+}
 
 /******************
 	navbar
@@ -76,7 +71,6 @@ footer {
 .container-fluid{
 	background-color: white;
 }
-
 .navbar-default{
     padding: 1em;
     background-color: transparent;
@@ -86,28 +80,36 @@ footer {
 
 /****************************************Acceuil****************************************/
 
+.imghome{
+	height: 146em;
+	width: 100%;
+	background:url(../img/home.png) no-repeat center center;
+  	margin:0;
+	padding:0;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+}
 /******************
 	bloc 1
 ******************/
-#bloc1{
+/*#bloc1{
 	background-color: white;
 	background-image:url(../img/p1-paillette-gauche.png);
 	background-position: 0% 0%;
 	background-repeat: no-repeat;
 	height: 28em;
-}
+}*/
 
 /******************
 	bloc 2
 ******************/
-#bloc2{
+/*#bloc2{
 	background-color: #F3EFEB;
 	background-image:url(../img/p1-paillette-droite.png);
 	background-position: 100% 100%;
 	background-repeat: no-repeat;
 	height: 23em;
 }
-
 .textbloc2{
 	margin: 0 auto;
 	text-align: center;
@@ -125,81 +127,79 @@ footer {
 	font-size: 14pt;
 	float: none;
 }
-
 .col {
     display: inline-block;
   
 }
-
 .column {
 	padding-top: 1em;
     text-align: center;
 }
-
-/******************
-	bloc 3
-******************/
 #bloc3{
-	background-image:url(../img/p2-background.jpg);
-	background-repeat: no-repeat fixed;
-	margin:0;
-    padding:0;
-	max-width: 100%;
-    height: 60em;
-	background-size: cover;
+	height: 60em;
+	width: 100%;
+	display: block;
+  	position: relative;
+}*/
+/*For background-opacity,you can fake it by inserting a pseudo 
+element with regular opacity the exact size of the element behind it.*/
+/*#bloc3::after {
+  content: "";
+  background:url(../img/p2-background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
-#bloc3{:hover { 
-    opacity: 0.9;
-}
-
-
 .textbloc3{
 	margin: 0 auto;
 	text-align: center !important;
 	font-size: 2em;
 	color: white;
 } 
-
 .imgbloc3{
 	margin-top: 12em;
 }
-
 .line {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 #separateurorange{ 
 background-image:url(../img/p2-barre-orange.png); 
 background-size: cover;
 height: 0.8em;
 width: 100%;
 }
-
+*/
 /******************
 	bloc 4
 ******************/
-
+/*
 .actua{
 	margin-top: 2em;
 }
-
 .titlebloc{
 	font-size: 21px;
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 1em;
-
 }
-
 #bloc4{
 	height: 30em;
 	background-image:url(../img/p3-paillettegauche.png), url(../img/p3-paillette-droite.png); 
 	background-position: 0% 0%, 100% 0%;
 	background-repeat: no-repeat;	
-}
+}*/
 
+.actua{
+	margin: 2em 3em 2em 3em;
+	text-align: center;
+}
 .textbloc4{
 	color: orange;
 	font-size: 16pt;
@@ -211,7 +211,7 @@ width: 100%;
 	margin: 0;
 	display: block;
 	width: 100%;
-	height: 20em;
+	height: auto;
 }
 
 .bloc_orange{
@@ -222,27 +222,43 @@ width: 100%;
 }
 
 .endfile{
-	margin-bottom: 5em;
+	text-align: center
 }
 
-/****************************************Prestations****************************************/
-/*. = class
-# = id
-rien = nom de l'emt*/
+/****************************************Parcours****************************************/
+.lecv{
+	height: 90em;
+	width: 100%;
+	background:url(../img/cv.jpg) no-repeat center center;
+	background-size: contain; /* version standardisée */
+}
+/****************************************Présentation****************************************/
+.presentation{
+	margin: 8em 8em;
+}
+.titlepres{
+	text-align: center;
+}
+.textpres{
+	margin: 4em 6em;
+	text-align: justify;
+}
 
+
+/****************************************Prestations****************************************/
+.sizemiddle{
+	margin: 7em 0em;
+}
 #prestation{
 	text-align: center;
 }
-
 .prestapicto{
 	margin-top: 5em;
 }
-
 .textpresta{
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
-	}
-
+}
 .titlepresta{
 	font-family: "Oswald",sans-serif;
 	font-weight: 400;
@@ -259,9 +275,6 @@ rien = nom de l'emt*/
 	margin-top: 1em;
 }
 
-
-
-
 /**************************************** Présentation ****************************************/
 
 #presentation{
@@ -269,11 +282,9 @@ rien = nom de l'emt*/
 	margin: 3em 10em;
 	text-align: justify;
 }
-
 .listpresentation{
 	margin-left: 1.5em;
 }
-
 .id{
 	/*border-radius: 195px 195px 195px 195px;
 -moz-border-radius: 195px 195px 195px 195px;
@@ -284,13 +295,11 @@ rien = nom de l'emt*/
 	width: 20em;
 	margin-bottom: 1em;
 }
-
 .titleaboutme{
 	text-align: center;
 	margin-bottom: 0.5em;
 	font-size: 1.4em;
 }
-
 .textaboutme{
 	font-family: "Arial", sans-serif;
 	font-weight: 200;
@@ -301,10 +310,16 @@ rien = nom de l'emt*/
 	text-align : justify;
 }
 
-
-
 /************************************** réalisations **********************************/
 
+.real{
+	margin: 0;
+	text-align: center;
+}
+.monimg{
+	width: 20em;
+	height: 15em;
+}
 .realtitle{
 	margin: 0;
 	font-family: "Oswald", sans-serif;
@@ -312,17 +327,14 @@ rien = nom de l'emt*/
 	font-size: 2.7em;
 	text-align: center;
 }
-
 .align{
 	display: block;
 	text-align: center;
 }
-
 .textreal{
 	text-align: center;
 	display: block;
 }
-
 /*au survol*/
 .ausurvolreal {
     position: relative;
@@ -330,56 +342,59 @@ rien = nom de l'emt*/
     overflow: hidden;
     margin: 0;
 }
-
-
 .survolreal {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: .5em;
+    padding: 2em;
     background: #000;
     background: rgba(0, 0, 0, .75);
     color: #fff;
     opacity: 0;
 }
-
 .ausurvolreal:hover img {
     transform: scale(1.2);
 }
-
 .ausurvolreal:hover .survolreal {
     opacity: 1;
 }
-}
 
+.onepagereal{
+	text-align: center;
+	margin: 4em 4em;
+}
+.texteonereal{
+	margin: 0.5em 30em;
+	text-align: justify;
+}
+.datetxt{
+	margin-left: 2em;
+}
 /********************************** Partenaires ****************************************/
 
 .mespartenaires{
-	
+	margin-bottom: 1em; 
+	text-align: center;
 }
-
 .logoimg{ 
 	border: 0;
 	padding: 0;
 	margin: 0;
 	display: block;
-	height: 18em;
+	height: 15em;
 	width : 100%;
 }
-
 .partenairefigure {
     position: relative;
     display: inline-block;
     overflow: hidden;
     margin: 0;
 }
-
 img, .prestastyle {
     transition: all .25s ease;
 }
-
 .prestastyle {
     position: absolute;
     top: 0;
@@ -392,27 +407,21 @@ img, .prestastyle {
     color: #fff;
     opacity: 0;
 }
-
 .partenairefigure:hover img {
     transform: scale(1.2);
 }
-
 .partenairefigure:hover .prestastyle {
     opacity: 1;
 }
-
 .titlepartenaire{
 	color: orange;
 }
-
 .textpartenaire{
 
 }
-
 .sitename{
 	color: white;
 }
-
 .sitename:hover{
 	color: white;
 	font-size: 16px;
@@ -422,7 +431,8 @@ img, .prestastyle {
 	contact
 ******************/
 .contact{
-	margin: 0 50px;
+	margin: 8em 10em;
+	
 }
 
 /******************
