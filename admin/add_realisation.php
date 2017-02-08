@@ -1,7 +1,8 @@
 <?php 
- 
-require_once 'inc/connect.php';
 include_once 'inc/header.php';
+include_once 'inc/function.php';
+require_once 'inc/connect.php';
+logged_only();
 
 $error = []; // array
 $post = []; // array
@@ -58,6 +59,7 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     $url = $post['url'];
     }
     else { 
+
         // Ici je suis sur de ne pas avoir d'erreurs, donc je peux faire du traitement.
         $res = $db->prepare('INSERT INTO achievements (title, image, url, content, date_add) VALUES(:title, :image, :url, :content, :date_add)');
         $res->bindValue(':title', $post['title']);
@@ -79,20 +81,18 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
 }
 ?>
 
-    <h1 class="text-center"> Ajouter des réalisations </h1>
+<h1 class="text-center"> Ajouter des réalisations </h1>
 
 <!-- Si tout est ok, on affiche notre victoire ! -->
-<?php 
-    if(isset($success) && $success == true):
-?>
-    <div class="alert alert-success" role="alert">
-    Cette réalisation a été bien mise à jour.</div>
-        
+<?php if(isset($success) && $success == true): ?>
+    
+    <div class="alert alert-success" role="alert"> Cette réalisation a été bien mise à jour.</div>
+            
     <div class="form-group">
         <button onclick="window.location.href='read_admin.php'" class="btn btn-primary">Retour aux réalisation </button>
     </div>
-
 <?php endif;
+
     // Si on a des erreurs, on les affiche
     if(isset($showErrors) && $showErrors == true){
         // Afficher mes erreurs

@@ -26,13 +26,15 @@ body {
 body {
 	position: relative;
 }
-footer { 
-	bottom: 0; 
-	left: 0; 
-	right: 0;
-	margin-top: 0.5em;
+footer{
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    margin-top: 1em;
 
 }
+
 
 .nomargin{
 	margin: 0;
@@ -445,7 +447,6 @@ img, .prestastyle {
     font-size: 1.2em;
     background-color: #F3EFEB;
     padding: 2em;
-    margin-top: 2em;
     color: black;
 }
  

@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 
     <!-- mon css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style_admin.css">
 
    	 <!-- datetime -->
    	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">

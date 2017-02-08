@@ -1,8 +1,8 @@
 <?php
-require_once 'inc/connect.php';
 include_once 'inc/header.php';
-// var a = (b || c) -> si b == null ou undefined alors on prend c
-// var a = (b == 0) ? b : c -> si b == 0 alors b sinon c
+include_once 'inc/function.php';
+require_once 'inc/connect.php';
+logged_only();
  
 // On instancie nos variables qu'on utilisera plus tard
 $error = []; // array
@@ -35,8 +35,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 		$content = $realisation['content']; 
 		$date_add = $realisation['date_add']; 		
 	}
-}
-
+}	
 // si $idRealisation est défini 
 if(isset($idRealisation)){
 	// On vérifie que notre formulaire n'est pas vide
@@ -82,12 +81,12 @@ if(isset($idRealisation)){
 	    $showErrors = true;
 	    
 	    }
-		else { 
+		else 
+		{ 
 			$newTitle = $post['title'];
 	    	$newContent = $post['content'];
 	    	$newUrl = $post['url'];
 	    	$newDate_add = implode("-", array_reverse(explode("/",$post['date_add'])));
-
 
 			// Ici je suis sur de ne pas avoir d'erreurs, donc je peux faire du traitement.
 			// (title, image, url, content, date_add) VALUES(title, image, url, content, date_add)
@@ -106,6 +105,7 @@ if(isset($idRealisation)){
 			// retourne un booleen => true si tout est ok, false sinon
 			if($res->execute()){
 				$formValid = true; // Pour afficher le message de réussite si tout est bon
+				header('location:read_admin.php');
 			}
 			else {
 				// Permettra d'afficher les erreurs éventuelles
@@ -114,7 +114,6 @@ if(isset($idRealisation)){
 		}
 	}
 }
-	
 	
 ?>
 

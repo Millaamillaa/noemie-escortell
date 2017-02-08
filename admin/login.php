@@ -1,19 +1,55 @@
-<?php 
+<?php session_start();
+include_once 'inc/header.php'; 
+require_once 'inc/function.php';
+require_once 'inc/connect.php';
 
-$db = new PDO('mysql:host=localhost;dbname=noemi;charset=utf8', 'root', '');
+$post = [];
+
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-require 'inc/header.php'; 
-
-$req = $db->query('SELECT * FROM users');
-$user = $req->fetch();
 
 ?>
 
 <h2> Se connecter </h2>
-<br>
+<?php 
+if(!empty($_POST)){
+	// Permet de nettoyer les données du formulaire. Équivalent à notre foreach() habituel
+	$post = array_map('strip_tags', $_POST);
+	$post = array_map('trim', $post);
 
-<form action="" method="POST" class="pure-form pure-form-aligned">
+	if (isset($_POST) AND !empty($_POST)) {
+		if (!empty(htmlspecialchars($_POST['username'])) AND !empty(htmlspecialchars($_POST['password']))) {
+
+				$req = $db->prepare('SELECT * FROM users WHERE username = :username AND password = :password ');
+				$req->execute([
+					'username' => $_POST['username'],
+					'password' => $_POST['password']
+					]);
+				$user = $req->fetchObject();
+					if ($user) {
+						$_SESSION['admin'] = $_POST['username'];
+						header('location:home.php');
+					}
+					else{
+						$error ='Identifiants incorrects';
+					} 
+		}
+		else{
+				$error = 'Veuillez remplir tous les champs!';
+			}
+		}
+	}
+	//traitement des erreurs
+	if(isset($error)){
+		echo '<div class="error">'. $error .'</div>';
+	}
+ ?>
+
+<?php if(isset($_SESSION['user'])): 
+	header('Location: admin.php');?>    
+<?php else: ?>
+
+<br>
+<form action="login.php" method="POST" class="pure-form pure-form-aligned">
 
 	<div class="pure-control-group">
 
@@ -37,7 +73,7 @@ $user = $req->fetch();
 	</div>
 	<input type="hidden" name="id_client" value="<?php echo $_SESSION['id'];?>">
 <button type="submit" class="pure-button pure-button-primary">Se connecter</button>
-
+ <?php endif; ?>
 </form>
 
 <?php require 'inc/footer.php' ?>

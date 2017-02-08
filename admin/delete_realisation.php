@@ -1,9 +1,10 @@
 <?php 
-require_once 'inc/connect.php';
 include_once 'inc/header.php';
+include_once 'inc/function.php';
+require_once 'inc/connect.php';
+logged_only();
 
 $deleteOk = false;
-
 // Permet de s'assurer qu'un paramètre GET est bien été transmis et qu'il est de de type numérique 
 if(isset($_GET['id']) && !empty($_GET['id'])){
 	$idRealisation = $_GET['id']; 
