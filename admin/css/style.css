@@ -17,7 +17,7 @@
 /*Couleurs dimentionnement positionnement des différents blocs*/
 
 html,
-body {
+body{
     height: 100%;
 }
 
@@ -59,3 +59,23 @@ body {
         top: 0;
         right: -15px;
     }
+
+
+/******************
+    footer
+******************/
+
+.bas{
+    position:fixed;
+    height:30px;
+    width:100%;
+    height: 5em;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #F3EFEB;
+    padding: 2em;
+    margin-top: 2em;
+    color: black;
+    left:0px;
+    bottom:0px;
+}
