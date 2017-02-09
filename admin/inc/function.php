@@ -5,7 +5,7 @@ function logged_only(){
 if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
-if (!isset($_SESSION['user'])) {
+if (!isset($_SESSION['admin'])) {
     echo '<br>';
     echo "<div class='alert alert-danger' style='color:red; font-size: 60px;'><center><strong>Vous n'avez pas le droit d'accéder a cette page !</strong></center></div>";
     echo '<br>';
@@ -16,7 +16,7 @@ if (!isset($_SESSION['user'])) {
 	}
 }
 function logged(){
-    if (!isset($_SESSION['user'])) {
+    if (!isset($_SESSION['admin'])) {
         echo '<br>';
         echo "<div class='alert alert-danger' style='color:red; font-size: 60px;'><center><strong>Vous n'avez pas le droit d'accéder a cette page !</strong></center></div>";
         echo '<br>';
@@ -26,3 +26,4 @@ function logged(){
         exit();
     }
 }
+?>

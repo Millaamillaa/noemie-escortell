@@ -1,6 +1,6 @@
 <?php 
 include_once 'inc/header.php';
-include_once 'inc/function.php';
+require_once 'inc/function.php';
 require_once 'inc/connect.php';
 logged_only();
 

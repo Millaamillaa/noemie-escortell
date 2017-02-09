@@ -6,7 +6,7 @@ require_once 'inc/function.php';
 
 logged();
 ?>
- ?>
+
 
 <center>
 <p> Bienvenue sur l'interface d'administration : <?php echo $_SESSION['admin'] ?> !<hr>

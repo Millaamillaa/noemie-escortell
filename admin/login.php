@@ -8,7 +8,6 @@ $post = [];
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 ?>
-
 <h2> Se connecter </h2>
 <?php 
 if(!empty($_POST)){
@@ -44,8 +43,8 @@ if(!empty($_POST)){
 	}
  ?>
 
-<?php if(isset($_SESSION['user'])): 
-	header('Location: admin.php');?>    
+<?php if(isset($_SESSION['user'])):?> 
+<?php header('Location: admin.php');?>    
 <?php else: ?>
 
 <br>
@@ -71,7 +70,7 @@ if(!empty($_POST)){
 			<input type="checkbox" name="remember" value="1"/> <label>Se souvenir de moi</label>
 	
 	</div>
-	<input type="hidden" name="id_client" value="<?php echo $_SESSION['id'];?>">
+	<input type="hidden" name="id_client" value="<?php echo $_SESSION['user'];?>">
 <button type="submit" class="pure-button pure-button-primary">Se connecter</button>
  <?php endif; ?>
 </form>
