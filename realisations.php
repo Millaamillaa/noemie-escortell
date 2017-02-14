@@ -26,7 +26,7 @@ foreach($realisations as $real){
                 echo '<figcaption class="survolreal">';
                     echo '<p class="textreal">'.substr($real['content'],0, 500).'...</p>';
                     echo '<p>'.$real['url'].'<p>'; //ajouter un href
-	                echo '<p class="datetxt"> '.date('d/m/Y', strtotime($real['date_add'])).'</p>';
+	                // echo '<p class="datetxt"> '.date('d/m/Y', strtotime($real['date_add'])).'</p>';
                 echo '<figcation>';
             echo '</figure>';
 	// En récupérant l'id de la realisation, je peux le passer en GET afin d'avoir un seul et même fichier pour lire chaque realisation individuellement 

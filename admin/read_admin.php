@@ -1,6 +1,8 @@
 <?php
 include_once 'inc/header.php';
 require_once 'inc/connect.php';
+require_once 'inc/function.php';
+logged_only();
 ?>
 	<p class="realtitle"> RÉALISATIONS </p> <br>
     <img class="align" src="../img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->

@@ -44,7 +44,7 @@
                 <li><a href="prestations.php">Prestations</a></li>
                 <li><a href="demarches.php">Démarches</a></li>
                 <li><a href="realisations.php">Réalisations</a></li>
-                <li><a href="partenaires.php">Paternaires</a></li>
+                <li><a href="partenaires.php">Partenaires</a></li>
             </ul>
         </div><!-- /container-fluid -->
     </nav>
