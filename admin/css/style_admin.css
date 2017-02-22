@@ -8,25 +8,29 @@
     la totale
 *******************/
 
-* {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-}
-
 /*Couleurs dimentionnement positionnement des différents blocs*/
-
-html,
-body{
+html, body {
+    height: 100%;
+    margin: 0; padding: 0;
+}
+body {
+    display : table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     position: relative;
 }
+
 footer{
-    
-    margin-top: 1em;
+    display : table-row;
+    width: 100%;
+    height: 100px; /* à titre d'exemple */
     bottom: 0; 
     left: 0; 
     right: 0;
+    position: absolute; 
 }
+
 .nomargin{
 	margin: 0;
 }

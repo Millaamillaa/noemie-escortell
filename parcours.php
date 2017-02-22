@@ -14,9 +14,10 @@ require_once 'inc/connect.php'; ?>
 // 		// $resume contient chaque entrée de ma table, les colonnes deviennent les clés du tableau
 // 	    echo '<img class="" src="img/'.$resume['image'].'">';
 // 	} -->
-
+<img class="pailletteleft" src="img/p1-paillette-gauche.png" alt="Paillette décorative"/> 
 <div class="lecv"></div>
-
+<img class="pailletteright" src="img/p1-paillette-droite.png" alt="Paillette décorative"/> 
+ 
 <?php
 include_once 'inc/footer.php';
 ?>

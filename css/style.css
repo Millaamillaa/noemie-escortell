@@ -9,35 +9,37 @@
 *******************/
 
 * {
-    box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 /*Couleurs dimentionnement positionnement des différents blocs*/
-html {
-  height: 100%;
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
 }
 body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
+	display : table;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
+
 footer{
+	display : table-row;
 	width: 100%;
+	height: 100px; /* à titre d'exemple */
     bottom: 0; 
     left: 0; 
     right: 0;
-    margin-top: 1em;
-    position: fixed;
+    position: absolute; 
 }
 .nomargin{
 	margin: 0;
 }
-
 /*Media queries*/
 @media print {
     #menu,
@@ -49,21 +51,24 @@ footer{
         color: black;
     }
 }
-
-@media screen and (max-width: 640px) {
-    .bloc {
-        display: block;
-        clear: both;
-    }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
 }
-
-@media screen and (min-width: 200px) and (max-width: 640px) {
-    .bloc {
-        display: block;
-        clear: both;
-    }
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
 }
-
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+  text-align: center;
+}
 /******************
 	navbar
 ******************/
@@ -72,14 +77,19 @@ footer{
 	background-color: white;
 }
 .navbar-default{
-    padding: 1em;
     background-color: transparent;
     border-color: transparent;
 }
+.navbar{
+	margin-bottom: 0em;
+}
+.navbar-default{
+	padding: 0em !important;
+}
 /****************************************Acceuil****************************************/
 .imghome{
-	height: 146em;
-	width: 100%;
+	min-height: 146em;
+	width: auto;
 	background:url(../img/home-exportation.jpg) no-repeat center center;
   	margin:0;
 	padding:0;
@@ -192,14 +202,20 @@ width: 100%;
 	background-position: 0% 0%, 100% 0%;
 	background-repeat: no-repeat;	
 }*/
+.endfile{
+	margin: 0 auto;
+}
 .actua{
-	margin: 2em 3em 2em 3em;
+	padding-right: 4em;
+	margin-left: 6em;
 	text-align: center;
 }
-.textbloc4{
+.titlehome{
 	color: orange;
-	font-size: 16pt;
-	height: 3em;
+	font-size: 14pt;
+	margin-bottom: 0.5em;
+	text-align: left;
+	
 }
 .monimage{
 	border: 0;
@@ -211,14 +227,14 @@ width: 100%;
 }
 .bloc_orange{
 	width: 100%;
-	height: 0.8em;
+	height: 0.6em;
 	background-color: orange;
-	padding-top: 1em;
+	padding-top: 0.5em;
 }
-.endfile{
-	text-align: center;
-	margin-bottom: 5em;
+.endhome{
+	margin-bottom: 4em;
 }
+
 /****************************************Parcours****************************************/
 .lecv{
 	height: 90em;
@@ -227,50 +243,31 @@ width: 100%;
 	background-size: contain; /* version standardisée */
 }
 /****************************************Présentation****************************************/
+#blocpres{
+	min-height: 45em;
+}	
 .presentation{
-	margin: 8em 8em;
+	margin: 1em 2em;
+}
+.centrage{
+	padding-top: 8em;
+	padding-left: 8em;
 }
 .titlepres{
-	text-align: center;
+	text-align: justify;
+	font-size: 2em;
 }
 .textpres{
-	margin: 4em 6em;
 	text-align: justify;
-}
-/**************************************** Présentation ****************************************/
-#presentation{
-	text-align: center;
-	margin: 3em 10em;
-	text-align: justify;
-}
-.listpresentation{
-	margin-left: 1.5em;
-}
-.id{
-	/*border-radius: 195px 195px 195px 195px;
--moz-border-radius: 195px 195px 195px 195px;
--webkit-border-radius: 195px 195px 195px 195px;
-	*/
-	display: block;
-	margin: 0 auto;
-	width: 20em;
-	margin-bottom: 1em;
-}
-.titleaboutme{
-	text-align: center;
-	margin-bottom: 0.5em;
-	font-size: 1.4em;
-}
-.textaboutme{
-	font-family: "Arial", sans-serif;
-	font-weight: 200;
-	font-size: 1.2em;
-	color: black;
-	margin: 0 5em;
-	text-align : center;
-	text-align : justify;
 }
 /****************************************Prestations et démarches****************************************/
+.pailletteleft{
+	float: left;
+}
+.pailletteright{
+	float:right;
+}
+
 #prestation{
 	text-align: center;
 }
@@ -321,13 +318,8 @@ width: 100%;
 	text-align: justify;
 }
 /************************************** réalisations **********************************/
-.real{
-	margin: 0;
-	text-align: center;
-}
-.monimg{
-	width: 20em;
-	height: 15em;
+.sizereal{
+	min-height: 45em;
 }
 .realtitle{
 	margin: 0;
@@ -335,15 +327,35 @@ width: 100%;
 	font-weight: 400;
 	font-size: 2.7em;
 	text-align: center;
-}
+} /*titre de page*/
 .align{
 	display: block;
 	text-align: center;
-}
+	margin-bottom: 2em;
+} /*banderole*/
+
+.realcolumn {
+	margin: 0;
+	text-align: center;
+} /*les colones*/
+.titlereal{
+	color: orange;
+	font-size: 16pt;
+	margin-bottom: 0.3em;
+}/*mon titre de realisation*/
+
 .textreal{
 	text-align: center;
 	display: block;
 }
+
+.blocrealorange{
+	width: 100%;
+	height: 0.4em;
+	background-color: orange;
+	padding-top: 0.5em;
+}
+
 /*au survol*/
 .ausurvolreal {
     position: relative;
@@ -357,34 +369,53 @@ width: 100%;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 2em;
-    background: #000;
-    background: rgba(0, 0, 0, .75);
-    color: #fff;
-    opacity: 0;
+    padding: 1em;
 }
 .ausurvolreal:hover img {
-    transform: scale(1.2);
-}
-.ausurvolreal:hover .survolreal {
-    opacity: 1;
+   /* transform: scale(1.2);*/
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    opacity: 0.5;
 }
 
+/*le bouton orange*/
+.btnrealstye {
+	color: orange;
+	font-size: 1.2em;
+}
+a.btnrealstye.active:hover{
+	color:black;
+	text-decoration-line: none;
+} /*supprimer les couleurs et surlignage du survol du lien*/
+.spacebtwrealfooter{
+	margin-bottom: 5em;
+}
+
+/*VIEW ONE PAGE ONE REAL*/
 .onepagereal{
 	text-align: center;
-	margin: 4em 4em;
+	min-height: 50em;
+}
+.monimg{
+	width: 20em;
 }
 .texteonereal{
-	margin: 0.5em 30em;
-	text-align: justify;
+	margin: 2em 15em;
 }
-.datetxt{
-	margin-left: 2em;
+.linksitereal{
+
 }
 /********************************** Partenaires ****************************************/
 .mespartenaires{
 	margin-bottom: 1em; 
 	text-align: center;
+}
+#partenaires{
+	text-align: center;
+	min-height: 115em;
 }
 .logoimg{ 
 	border: 0;
@@ -409,7 +440,7 @@ img, .prestastyle {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: .5em;
+    padding: 0.5em;
     background: #000;
     background: rgba(0, 0, 0, .75);
     color: #fff;

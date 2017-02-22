@@ -26,7 +26,7 @@ if(!empty($_POST)){
 				$user = $req->fetchObject();
 					if ($user) {
 						$_SESSION['admin'] = $_POST['username'];
-						header('location:home.php');
+						header('location:index.php');
 					}
 					else{
 						$error ='Identifiants incorrects';

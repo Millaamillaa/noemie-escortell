@@ -10,30 +10,30 @@ include_once 'inc/header.php';
             <div class="container">
                 <div class="row">
                     <!-- picto 1 --> 
-                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/prestation-picto-1.png" alt="vignette"> <!-- picto 1 -->
                             <p class="titlepresta"> COOPÉRATION INTERRÉGIONALE <br> ET EUROPEENNE </p>
                             <p class="textpresta"> Convaincue de la nécessité aujourd'hui pour ... </p>
-                            <a href="lienverslalecture"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
+                            <a href="sous-cooperation.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
                         </div>
                     </div>
                     <!-- picto 2 --> 
-                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/prestation-picto-2.png" alt="vignette"> <!-- picto 2 -->
                             <p class="titlepresta"> PROJETS DÉVELOPPEMENT <br> TERRITORIAL </p>
                             <p class="textpresta"> Mon réseau de partenaires et mes  ... </p>
-                            <a href="lienverslalecture"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
+                            <a href="sous-projet.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
                         </div>
                     </div>
                     <!-- picto 3--> 
-                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="mes picto">
                         	<img class="prestapicto" src="img/prestation-picto-3.png" alt="vignette"> <!-- picto  3-->
-                            <p class="titlepresta"> CO <br> ACTION </p> 
+                            <p class="titlepresta"> COUT DES PRESTATIONS <br> ET DEVIS </p> 
                             <p class="textpresta"> Mon réseau de partenaires et mes ... </p>
-                            <a href="lienverslalecture"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
+                            <a href="sous-coaction.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
                         </div>
                     </div>
                 </div>

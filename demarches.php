@@ -9,16 +9,16 @@ include_once 'inc/header.php';
             <div class="container">
                 <div class="row">
                     <!-- picto 1 --> 
-                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/competence.png" alt="vignette"> <!-- picto 1 -->
                             <p class="titlepresta"> DOMAINES DE COMPÉTENCE </p>
                             <p class="textpresta"> Gestion et coordination de projet ... </p>
-                            <a href=""><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
+                            <a href="sous-competence.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
                         </div>
                     </div>
                     <!-- picto 2 --> 
-                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/methodologie.png" alt="vignette"> <!-- picto 2 -->
                             <p class="titlepresta"> MÉTHODOLOGIE </p>
@@ -27,7 +27,7 @@ include_once 'inc/header.php';
                         </div>
                     </div>
                     <!-- picto 3--> 
-                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/demarche.png" alt="vignette"> <!-- picto  3-->
                             <p class="titlepresta"> DÉMARCHE </p>

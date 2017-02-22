@@ -2,7 +2,7 @@
 include_once 'inc/header.php';
 ?>
 <!-- bloc 1-->
-    <section id="prestation">
+    <section id="partenaires">
         <p class="bigtitlepresta"> PARTENAIRES </p>
        
         <img src="img/prestation-soulignage-titre.png" alt="vignette">

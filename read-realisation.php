@@ -23,15 +23,16 @@ require_once 'inc/connect.php';
 		$real = $res->fetch(PDO::FETCH_ASSOC);
 
 		echo '<div class="onepagereal">';
-		echo '<h2>'.$real['title'].'</h2>';
-	    echo '<br>';
-	    echo '<img class="monimg" src="img/'.$real['image'].'">';
-	    echo '<br>';
-	    echo '<p class="texteonereal">'.substr($real['content'],0, 500).'...</p>';
-	    echo '<br>';
-		echo '<p class="datetxt"> Réalisé le '.date('d/m/Y', strtotime($real['date_add'])).'</p>';
-	    echo '<p>'.$real['url'].'<p>'; //ajouter un href
 		echo '<br>';
+		echo '<h2>'.$real['title'].'</h2>';
+		echo '<br>';
+		echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank"> '.$real['url'].' </a></p>';
+		echo '<br>';
+		echo '<img class="monimg" src="img/'.$real['image'].'">';
+	    echo '<p class="texteonereal">'.($real['content']).'</p>';
+	   	echo '<br>';
+	   	echo '<a href="realisations.php" class="btnrealstye btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux projets</a>';
+	   	echo '</div>';
 	} else {
 			echo 'Réalisation introuvable !';
 		}

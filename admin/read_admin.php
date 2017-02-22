@@ -5,7 +5,6 @@ require_once 'inc/function.php';
 logged_only();
 ?>
 	<p class="realtitle"> RÉALISATIONS </p> <br>
-    <img class="align" src="../img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
  
 <?php  
     $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add ASC');
