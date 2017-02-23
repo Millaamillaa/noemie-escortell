@@ -26,10 +26,11 @@ require_once 'inc/connect.php';
 		echo '<br>';
 		echo '<h2>'.$real['title'].'</h2>';
 		echo '<br>';
-		echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank"> '.$real['url'].' </a></p>';
+		echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank">
+			  Le site du projet </a></p>';
 		echo '<br>';
-		echo '<img class="monimg" src="img/'.$real['image'].'">';
-	    echo '<p class="texteonereal">'.($real['content']).'</p>';
+		echo '<img class="monimage" src="img/'.$real['image'].'">';
+	    echo '<p class="texteonereal">'.$real['content'].'</p>';
 	   	echo '<br>';
 	   	echo '<a href="realisations.php" class="btnrealstye btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux projets</a>';
 	   	echo '</div>';

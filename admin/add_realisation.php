@@ -26,9 +26,6 @@ if(!empty($_POST) && (isset($post))){ //si le formulaire à été soumis
     if(empty($post['content'])){
     $error[] = 'il faut écrire un texte';
     }
-    if(empty($post['url'])){
-    $error[] = 'il faut mettre un lien';
-    }
     
     /** Gestion de la date **/
     $date = new DateTime();

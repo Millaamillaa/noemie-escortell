@@ -22,7 +22,7 @@ require_once 'inc/connect.php';
             echo '<div class="titlereal">'.$real['title'].'</div>';
             echo '<figure class="ausurvolreal">';
             echo '<div class="blocrealorange"> </div>';
-            echo '<img class="monimage" src="img/'.$real['image'].'" >';
+            echo '<img class="monimg" src="img/'.$real['image'].'" >';
             echo '<figcaption class="survolreal">';
             //echo '<p class="textreal">'.substr($real['content'],0, 500).'...</p>';
             //echo '<p>'.$real['url'].'<p>'; 
