@@ -3,8 +3,8 @@
 
 </main>
 
-<footer class="bas">
-    truc truc<!-- <p> ® 2016 - Noemie Escortell &reg;</p> -->
+<footer class="">
+    
 </footer>
 
 	<!--mettre jquery pour les fonction barre nav avant bootsrap : aller sur jquery - google CDN -prendre jQuery 2.x (dernière version)  -->

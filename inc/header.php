@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <a class="navbar-brand" href="index.php"><i class="fa fa-home" aria-hidden="true"></i></a>
             </div>  
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">

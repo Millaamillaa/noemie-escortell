@@ -378,11 +378,10 @@ width: 100%;
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    opacity: 0.5;
+    opacity: 0.8;
 }
-.monimg{
-	width: 20em;
-	height: 20em;
+.monimg{	
+	
 }
 
 /*le bouton orange*/
@@ -401,12 +400,27 @@ a.btnrealstye.active:hover{
 /*VIEW ONE PAGE ONE REAL*/
 .onepagereal{
 	text-align: center;
-	min-height: 100em;
+	min-height: 60em;
+}
+.blocreal{
+	width:30em;
+	height:auto;
+/*	background:#F3EFEB;*/
+	padding-bottom: 1em;
 }
 .monimage{
-	width: 30em;
-	height: 30em;
+	width: 20em;
+	height: 20em;
 	margin: 0 auto;
+}
+.monimage:hover  {
+   /* transform: scale(1.2);*/
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    opacity: 0.8;
 }
 .texteonereal{
 	margin: 0 auto;

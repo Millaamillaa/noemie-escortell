@@ -23,16 +23,17 @@ require_once 'inc/connect.php';
 		$real = $res->fetch(PDO::FETCH_ASSOC);
 
 		echo '<div class="onepagereal">';
-		echo '<br>';
+		echo '<img class="pailletteleft" src="img/p1-paillette-gauche.png" alt="Paillette décorative"/> ';
+		echo '<div class="blocreal">';
 		echo '<h2>'.$real['title'].'</h2>';
-		echo '<br>';
 		echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank">
 			  Le site du projet </a></p>';
-		echo '<br>';
 		echo '<img class="monimage" src="img/'.$real['image'].'">';
 	    echo '<p class="texteonereal">'.$real['content'].'</p>';
 	   	echo '<br>';
 	   	echo '<a href="realisations.php" class="btnrealstye btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux projets</a>';
+	   	echo '</div>';
+	   	echo '<img class="pailletteright" src="img/p1-paillette-droite.png" alt="Paillette décorative"/>  ';
 	   	echo '</div>';
 	} else {
 			echo 'Réalisation introuvable !';
