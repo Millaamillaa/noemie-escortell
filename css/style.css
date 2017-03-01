@@ -239,7 +239,7 @@ width: 100%;
 .lecv{
 	height: 90em;
 	width: 100%;
-	background:url(../img/cv.jpg) no-repeat center center;
+	background:url(../img/cv.pdf) no-repeat center center;
 	background-size: contain; /* version standardisée */
 }
 /****************************************Présentation****************************************/
