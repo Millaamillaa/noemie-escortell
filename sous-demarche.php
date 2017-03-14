@@ -11,7 +11,7 @@ require_once 'inc/header.php';
                 <div class="row">
                     <!-- picto 1 --> 
                     <div class="centerunderview">
-                    	<img class="prestapicto" src="img/prestation-picto-1.png" alt="vignette"> <!-- picto 1 -->
+                    	<img class="prestapicto" src="img/demarche.png" alt="vignette"> <!-- picto 1 -->
                         <p class="titlepresta"> DOMAINES DE COMPÉTENCES </p>
                         <p class="textunder"> ► Gestion et coordination de projet <br>
                         ► Formation des acteurs de l’Economie Sociales et Solidaire   <br>

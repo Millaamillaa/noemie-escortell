@@ -7,7 +7,7 @@ require_once 'inc/connect.php';
 <!-- image banderole -->
 <img class="align" src="img/prestation-soulignage-titre.png" alt="vignette"> 
 <div class="container sizereal">
-    <div class="row">
+    <div class="annuletablerow row">
         <?php  
             $res = $db->prepare('SELECT * FROM achievements ORDER BY date_add DESC');
             $res->execute();
@@ -18,7 +18,7 @@ require_once 'inc/connect.php';
         // var_dump($realisation); // Permet de sortir en brut nos realisations
         foreach($realisations as $real){
         	// $real contient chaque entrée de ma table, les colonnes deviennent les clés du tableau
-        	echo '<div class="realcolumn col-sm-6 col-md-4">';
+        	echo '<div class="realcolumn col-sm-6 col-md-4 col-xs-9">';
             echo '<div class="titlereal">'.$real['title'].'</div>';
             echo '<figure class="ausurvolreal">';
             echo '<div class="blocrealorange"> </div>';

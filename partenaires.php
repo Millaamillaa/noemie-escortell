@@ -10,7 +10,7 @@ include_once 'inc/header.php';
         <div class="container">
             <div class="row">
                 <!-- presta 1 --> 
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
                             <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>

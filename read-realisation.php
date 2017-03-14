@@ -22,19 +22,25 @@ require_once 'inc/connect.php';
 		// $realisation contient ma realisation extrait de la db
 		$real = $res->fetch(PDO::FETCH_ASSOC);
 
-		echo '<div class="onepagereal">';
 		echo '<img class="pailletteleft" src="img/p1-paillette-gauche.png" alt="Paillette décorative"/> ';
-		echo '<div class="blocreal">';
-		echo '<h2>'.$real['title'].'</h2>';
-		echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank">
-			  Le site du projet </a></p>';
-		echo '<img class="monimage" src="img/'.$real['image'].'">';
-	    echo '<p class="texteonereal">'.$real['content'].'</p>';
-	   	echo '<br>';
-	   	echo '<a href="realisations.php" class="btnrealstye btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux projets</a>';
+		echo '<div class="container-fluid">';
+			echo '<div class="row">';
+				echo '<div class="col-md-4">';
+					echo '<img class="monimage" src="img/'.$real['image'].'">';
+				echo '</div>';
+				echo '<div class="col-md-6">';
+					echo '<div class="realright">';
+						echo '<h2 class="titlereal spacetitle ">'.$real['title'].'</h2>';
+					    echo '<p class="texteonereal">'.$real['content'].'</p>';
+		    			echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank">
+				  Le site du projet </a></p>';
+		   				echo '<br>';
+		   				echo '<a href="realisations.php" class="btnrealstye btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux projets</a>';
+		   			echo '</div>';
+	   			echo '</div>';
+	   		echo '</div>';
 	   	echo '</div>';
 	   	echo '<img class="pailletteright" src="img/p1-paillette-droite.png" alt="Paillette décorative"/>  ';
-	   	echo '</div>';
 	} else {
 			echo 'Réalisation introuvable !';
 		}

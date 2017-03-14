@@ -27,7 +27,6 @@ body {
 	padding: 0;
 	position: relative;
 }
-
 footer{
 	display : table-row;
 	width: 100%;
@@ -35,7 +34,7 @@ footer{
     bottom: 0; 
     left: 0; 
     right: 0;
-    position: absolute; 
+
 }
 .nomargin{
 	margin: 0;
@@ -69,6 +68,17 @@ footer{
 .container {
   text-align: center;
 }
+.container {
+  display: table;
+}
+.row {
+  display: table-row;
+  height: 100%;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  display: table-cell;
+
+}
 /******************
 	navbar
 ******************/
@@ -79,6 +89,7 @@ footer{
 .navbar-default{
     background-color: transparent;
     border-color: transparent;
+    margin-bottom: 0em;
 }
 .navbar{
 	margin-bottom: 0em;
@@ -88,7 +99,7 @@ footer{
 }
 /****************************************Acceuil****************************************/
 .imghome{
-	min-height: 146em;
+	min-height: 165em;
 	width: auto;
 	background:url(../img/home-exportation.jpg) no-repeat center center;
   	margin:0;
@@ -96,119 +107,15 @@ footer{
 	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
 	background-size: cover; /* version standardisée */
 }
-/******************
-	bloc 1
-******************/
-/*#bloc1{
-	background-color: white;
-	background-image:url(../img/p1-paillette-gauche.png);
-	background-position: 0% 0%;
-	background-repeat: no-repeat;
-	height: 28em;
-}*/
 
-/******************
-	bloc 2
-******************/
-/*#bloc2{
-	background-color: #F3EFEB;
-	background-image:url(../img/p1-paillette-droite.png);
-	background-position: 100% 100%;
-	background-repeat: no-repeat;
-	height: 23em;
-}
-.textbloc2{
-	margin: 0 auto;
-	text-align: center;
-	font-family: "OstrichSans-Heavy", sans-serif;
-	font-size: 20pt;
-	float: none;
-}
-.spaceb{
-	margin: 1.5em 0;
-}
-
-.textsuite{  
-	margin: 0 auto;
-	text-align: center;
-	font-size: 14pt;
-	float: none;
-}
-.col {
-    display: inline-block;
-  
-}
-.column {
-	padding-top: 1em;
-    text-align: center;
-}
-#bloc3{
-	height: 60em;
-	width: 100%;
-	display: block;
-  	position: relative;
-}*/
-/*For background-opacity,you can fake it by inserting a pseudo 
-element with regular opacity the exact size of the element behind it.*/
-/*#bloc3::after {
-  content: "";
-  background:url(../img/p2-background.jpg) no-repeat center center fixed;
-  background-size: cover;
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
-.textbloc3{
-	margin: 0 auto;
-	text-align: center !important;
-	font-size: 2em;
-	color: white;
-} 
-.imgbloc3{
-	margin-top: 12em;
-}
-.line {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#separateurorange{ 
-background-image:url(../img/p2-barre-orange.png); 
-background-size: cover;
-height: 0.8em;
-width: 100%;
-}
-*/
-/******************
-	bloc 4
-******************/
-/*
-.actua{
-	margin-top: 2em;
-}
-.titlebloc{
-	font-size: 21px;
-	text-align: center;
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-#bloc4{
-	height: 30em;
-	background-image:url(../img/p3-paillettegauche.png), url(../img/p3-paillette-droite.png); 
-	background-position: 0% 0%, 100% 0%;
-	background-repeat: no-repeat;	
-}*/
 .endfile{
-	margin: 0 auto;
+	margin-top: 4em;
 }
 .actua{
 	padding-right: 4em;
 	margin-left: 6em;
 	text-align: center;
+	margin-bottom: 2em;
 }
 .titlehome{
 	color: orange;
@@ -234,13 +141,13 @@ width: 100%;
 .endhome{
 	margin-bottom: 4em;
 }
-
 /****************************************Parcours****************************************/
 .lecv{
 	height: 90em;
 	width: 100%;
 	background:url(../img/cv.pdf) no-repeat center center;
 	background-size: contain; /* version standardisée */
+	  -webkit-background-size: cover;
 }
 /****************************************Présentation****************************************/
 #blocpres{
@@ -263,11 +170,16 @@ width: 100%;
 /****************************************Prestations et démarches****************************************/
 .pailletteleft{
 	float: left;
+	top: 5em;
+  	left: 0;
+  	position: absolute;
 }
 .pailletteright{
 	float:right;
+	bottom: 6.2em;
+  	right: 0;
+    position: absolute;
 }
-
 #prestation{
 	text-align: center;
 }
@@ -355,6 +267,10 @@ width: 100%;
 	background-color: orange;
 	padding-top: 0.5em;
 }
+/*problème de placement dans le row*/
+.annuletablerow{
+	display: inline-block;
+}
 
 /*au survol*/
 .ausurvolreal {
@@ -399,19 +315,17 @@ a.btnrealstye.active:hover{
 
 /*VIEW ONE PAGE ONE REAL*/
 .onepagereal{
-	text-align: center;
-	min-height: 60em;
+	
 }
 .blocreal{
-	width:30em;
+	/*width:30em;
 	height:auto;
-/*	background:#F3EFEB;*/
-	padding-bottom: 1em;
+	padding-bottom: 1em;*/
 }
 .monimage{
 	width: 20em;
 	height: 20em;
-	margin: 0 auto;
+	margin: 18em 0em 0em 16em;
 }
 .monimage:hover  {
    /* transform: scale(1.2);*/
@@ -423,13 +337,14 @@ a.btnrealstye.active:hover{
     opacity: 0.8;
 }
 .texteonereal{
-	margin: 0 auto;
-	padding: 1em;
 	text-align: justify;
-	width: 30em;
 }
-.linksitereal{
-
+.realright{
+	margin-left: 2em;
+}
+.spacetitle {
+	margin-top: 11.6em;
+	margin-left: 0;
 }
 /********************************** Partenaires ****************************************/
 .mespartenaires{
@@ -491,9 +406,30 @@ img, .prestastyle {
 /******************
 	contact
 ******************/
-.contact{
-	margin: 8em 10em;
+.imgcontact{
+	background:url(../img/contact4.jpg) no-repeat center center;
+	min-height: 56em;
+	width: auto;
+	background-size: cover;
 }
+.textcontact{
+	font-size: 2em;
+	padding-top: em;
+}
+.contact{
+	padding-top: 1em;
+	opacity: 1;
+	color: white;
+	text-align: center;
+}
+.titlecontact{  
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 2.7em;
+    text-align: center;
+    margin: 0;
+}
+
 /******************
 	footer
 ******************/

@@ -1,6 +1,7 @@
 </main>
 
 <footer class="bas">
+<br>
     <p> ® 2016 - Noemie Escortell &reg;</p>
 </footer>
 

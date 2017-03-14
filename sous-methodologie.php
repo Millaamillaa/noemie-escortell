@@ -10,7 +10,7 @@ require_once 'inc/header.php';
             <div class="container">
                 <div class="row">
                     <div class="centerunderview">
-                    	<img class="prestapicto" src="img/prestation-picto-1.png" alt="vignette">
+                    	<img class="prestapicto" src="img/methodologie.png" alt="vignette">
                         <p class="textunder"> 
                         Par le biais de la formation et de l’accompagnement, j’interviens à différents niveaux dans l’objectif de rendre les structures le plus autonomes possibles dans le temps. Je propose pour cela une méthodologie sur mesure tenant compte des spécificités des structures que j’accompagne.<br>
                         ► Un appui à l’élaboration d’une stratégie de développement<br>

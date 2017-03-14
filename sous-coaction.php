@@ -10,7 +10,7 @@ require_once 'inc/header.php';
             <div class="container">
                 <div class="row">
                     <div class="centerunderview">
-                        <img class="prestapicto" src="img/prestation-picto-1.png" alt="vignette">
+                        <img class="prestapicto" src="img/prestation-picto-3.png" alt="vignette">
                         <p class="textunder"> 
                         Pour toute demande de devis relatif à une prestation d’accompagnement ou de formation, je vous invite à me contacter afin que nous échangions sur vos besoins nescortell@co-actions.fr <br>
 

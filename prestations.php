@@ -2,7 +2,7 @@
 include_once 'inc/header.php';
 ?>
 
-<!-- bloc 1-->
+<!-- bloc 1--> 
     <section id="prestation">
         <p class="bigtitlepresta"> PRESTATIONS </p>
         <img src="img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
@@ -10,7 +10,7 @@ include_once 'inc/header.php';
             <div class="container">
                 <div class="row">
                     <!-- picto 1 --> 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/prestation-picto-1.png" alt="vignette"> <!-- picto 1 -->
                             <p class="titlepresta"> COOPÉRATION INTERRÉGIONALE <br> ET EUROPEENNE </p>
@@ -19,7 +19,7 @@ include_once 'inc/header.php';
                         </div>
                     </div>
                     <!-- picto 2 --> 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/prestation-picto-2.png" alt="vignette"> <!-- picto 2 -->
                             <p class="titlepresta"> PROJETS DÉVELOPPEMENT <br> TERRITORIAL </p>
@@ -28,7 +28,7 @@ include_once 'inc/header.php';
                         </div>
                     </div>
                     <!-- picto 3--> 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="mes picto">
                         	<img class="prestapicto" src="img/prestation-picto-3.png" alt="vignette"> <!-- picto  3-->
                             <p class="titlepresta"> COUT DES PRESTATIONS <br> ET DEVIS </p> 
