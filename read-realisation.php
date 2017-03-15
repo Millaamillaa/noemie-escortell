@@ -32,10 +32,9 @@ require_once 'inc/connect.php';
 					echo '<div class="realright">';
 						echo '<h2 class="titlereal spacetitle ">'.$real['title'].'</h2>';
 					    echo '<p class="texteonereal">'.$real['content'].'</p>';
-		    			echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank">
-				  Le site du projet </a></p>';
+		    			echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank">Le site du projet </a></p>';
 		   				echo '<br>';
-		   				echo '<a href="realisations.php" class="btnrealstye btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux projets</a>';
+		   				echo '<a href="realisations.php" role="button" aria-pressed="true"><img class="boutonplus" src="img/btn-retour.png"></a>'; 
 		   			echo '</div>';
 	   			echo '</div>';
 	   		echo '</div>';

@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 
     <!-- mon css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 </head>
 <body>
     <nav class="navbar navbar-default">

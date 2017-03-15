@@ -16,7 +16,7 @@
 }
 
 /*Couleurs dimentionnement positionnement des différents blocs*/
-html, body {
+html, body, main {
 	height: 100%;
 	margin: 0; padding: 0;
 }
@@ -147,18 +147,24 @@ footer{
 	width: 100%;
 	background:url(../img/cv.pdf) no-repeat center center;
 	background-size: contain; /* version standardisée */
-	  -webkit-background-size: cover;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
 }
 /****************************************Présentation****************************************/
 #blocpres{
-	min-height: 45em;
+	
 }	
 .presentation{
-	margin: 1em 2em;
+	height: 58em;
+	width: auto;
+	background:url(../img/presentation.jpg) no-repeat center center;
+	background-size: cover; /* version standardisée */
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
 }
 .centrage{
-	padding-top: 8em;
-	padding-left: 8em;
+	padding-top: 10em;
+	padding-left: 45em;
+	padding-right: 0;
+	width: 90em;
 }
 .titlepres{
 	text-align: justify;
@@ -167,6 +173,16 @@ footer{
 .textpres{
 	text-align: justify;
 }
+/*.paillettel{
+	float: left;
+	top: 5em;
+  	left: 0;
+}
+.pailletter{
+	float:right;
+	bottom: 6.2em;
+  	right: 0;
+}*/
 /****************************************Prestations et démarches****************************************/
 .pailletteleft{
 	float: left;
@@ -207,6 +223,10 @@ footer{
 }
 .boutonplus{
 	margin-top: 1em;
+}
+/*espacements entre les pictos de démarches et prestations*/
+.mespicto{
+	margin-bottom: 4em;
 }
 /******************pages vue des sous-prestations et sous-demarche*****************************/
 .titleunderview{
@@ -350,6 +370,7 @@ a.btnrealstye.active:hover{
 .mespartenaires{
 	margin-bottom: 1em; 
 	text-align: center;
+	padding: 1em;
 }
 #partenaires{
 	text-align: center;
@@ -360,8 +381,8 @@ a.btnrealstye.active:hover{
 	padding: 0;
 	margin: 0;
 	display: block;
-	height: 15em;
-	width : 100%;
+	height: 10em;
+	width : 10em;
 }
 .partenairefigure {
     position: relative;
@@ -408,13 +429,12 @@ img, .prestastyle {
 ******************/
 .imgcontact{
 	background:url(../img/contact4.jpg) no-repeat center center;
-	min-height: 56em;
+	min-height: 58em;
 	width: auto;
 	background-size: cover;
 }
 .textcontact{
 	font-size: 2em;
-	padding-top: em;
 }
 .contact{
 	padding-top: 1em;

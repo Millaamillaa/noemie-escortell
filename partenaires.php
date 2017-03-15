@@ -13,7 +13,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-1logo-capsolidaire.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -26,7 +26,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-2Alogo_cress_aquitaine.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -39,7 +39,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-3logo-apiup.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -52,7 +52,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-4logo-osons.png" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -65,7 +65,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-5logo-laba.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -78,7 +78,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-6logo-caprice.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -91,7 +91,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-7logo-bati-action.png" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -104,7 +104,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-8logo_pepito_nuage.png" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -117,7 +117,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-9logo-polecn.png" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
@@ -130,7 +130,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/A-11logo-copea.png" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
