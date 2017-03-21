@@ -11,7 +11,6 @@ require_once 'inc/connect.php';
 			$idRealisation = 1;
 		}
 	}
-
 	if(!empty($_GET)){
 		if(isset($idRealisation)){
 		// Prépare et execute la requète SQL pour récuperer notre realisation de manière dynamique
@@ -21,25 +20,26 @@ require_once 'inc/connect.php';
 
 		// $realisation contient ma realisation extrait de la db
 		$real = $res->fetch(PDO::FETCH_ASSOC);
-
-		echo '<img class="pailletteleft" src="img/p1-paillette-gauche.png" alt="Paillette décorative"/> ';
-		echo '<div class="container-fluid">';
+		echo '<div class="onepagereal container">';
 			echo '<div class="row">';
-				echo '<div class="col-md-4">';
+				//colone image
+				echo '<div class="col-xs-9 col-sm-6 col-md-4 col-lg-4">';
 					echo '<img class="monimage" src="img/'.$real['image'].'">';
-				echo '</div>';
-				echo '<div class="col-md-6">';
-					echo '<div class="realright">';
-						echo '<h2 class="titlereal spacetitle ">'.$real['title'].'</h2>';
+				echo '<br><br><br></div>';
+				//colone texte
+				echo '<div class="col-xs-12 col-sm-9 col-md-6 col-lg-6">';
+					echo '<div class="texteonereal">';
+						echo '<p class="titlereal spacetitle ">'.$real['title'].'</p>';
 					    echo '<p class="texteonereal">'.$real['content'].'</p>';
 		    			echo '<p class="linksitereal"> Lien vers <a href=" '.$real['url'].' " target="_blank">Le site du projet </a></p>';
 		   				echo '<br>';
 		   				echo '<a href="realisations.php" role="button" aria-pressed="true"><img class="boutonplus" src="img/btn-retour.png"></a>'; 
 		   			echo '</div>';
 	   			echo '</div>';
+	   			//cloture des container
 	   		echo '</div>';
 	   	echo '</div>';
-	   	echo '<img class="pailletteright" src="img/p1-paillette-droite.png" alt="Paillette décorative"/>  ';
+	   	echo '<br><br><br>';	   	
 	} else {
 			echo 'Réalisation introuvable !';
 		}

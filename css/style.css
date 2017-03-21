@@ -4,17 +4,13 @@
 
 /*Pour s'assurer que l'encodage des feuilles de style externes suit bien la norme UTF8*/
 
-/******************
-    la totale 
-*******************/
-
+/******************la totale *******************/
 * {
     margin: 0 auto;
     padding: 0;
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box;
 }
-
 /*Couleurs dimentionnement positionnement des différents blocs*/
 html, body, main {
 	height: 100%;
@@ -34,7 +30,6 @@ footer{
     bottom: 0; 
     left: 0; 
     right: 0;
-
 }
 .nomargin{
 	margin: 0;
@@ -65,6 +60,12 @@ footer{
     width: 1170px;
   }
 }
+@media screen and (max-width: 640px) {
+  .bloc {
+    display:block;
+    clear:both;
+  }
+}
 .container {
   text-align: center;
 }
@@ -77,12 +78,10 @@ footer{
 }
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   display: table-cell;
-
 }
 /******************
 	navbar
 ******************/
-
 .container-fluid{
 	background-color: white;
 }
@@ -97,7 +96,7 @@ footer{
 .navbar-default{
 	padding: 0em !important;
 }
-/****************************************Acceuil****************************************/
+/****************************************ACCUEIL****************************************/
 .imghome{
 	min-height: 165em;
 	width: auto;
@@ -111,26 +110,11 @@ footer{
 .endfile{
 	margin-top: 4em;
 }
-.actua{
-	padding-right: 4em;
-	margin-left: 6em;
-	text-align: center;
-	margin-bottom: 2em;
-}
 .titlehome{
 	color: orange;
 	font-size: 14pt;
 	margin-bottom: 0.5em;
 	text-align: left;
-	
-}
-.monimage{
-	border: 0;
-	padding: 0;
-	margin: 0;
-	display: block;
-	width: 100%;
-	height: auto;
 }
 .bloc_orange{
 	width: 100%;
@@ -141,7 +125,7 @@ footer{
 .endhome{
 	margin-bottom: 4em;
 }
-/****************************************Parcours****************************************/
+/****************************************PARCOURS***************************************/
 .lecv{
 	height: 90em;
 	width: 100%;
@@ -149,7 +133,7 @@ footer{
 	background-size: contain; /* version standardisée */
 	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
 }
-/****************************************Présentation****************************************/
+/****************************************PRÉSENTATION****************************************/
 #blocpres{
 	
 }	
@@ -183,12 +167,13 @@ footer{
 	bottom: 6.2em;
   	right: 0;
 }*/
-/****************************************Prestations et démarches****************************************/
+/****************************************PRESTA / DEMARCHES****************************************/
 .pailletteleft{
 	float: left;
 	top: 5em;
   	left: 0;
   	position: absolute;
+  	margin-right: 1em;
 }
 .pailletteright{
 	float:right;
@@ -204,6 +189,7 @@ footer{
 	font-family: "Oswald", sans-serif;
 	font-weight: 400;
 	font-size: 2.7em;
+	margin-top: 0.5em;
 }
 .sizemiddle{
 	margin: 6em 0em;
@@ -228,13 +214,13 @@ footer{
 .mespicto{
 	margin-bottom: 4em;
 }
-/******************pages vue des sous-prestations et sous-demarche*****************************/
+/******************pages vue des SOUS PRESTATIONS et SOUS DEMARCHES*****************************/
 .titleunderview{
 	margin: 0;
 	font-family: "Oswald", sans-serif;
 	font-weight: 400;
 	font-size: 2.7em;
-	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 }
 .insideunderview{
 	margin: 1em 0;
@@ -247,11 +233,13 @@ footer{
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	margin-top: 3em;
+	margin-bottom: 2em;
 	text-align: justify;
 }
-/************************************** réalisations **********************************/
+/************************************** RÉALISATIONS **********************************/
 .sizereal{
 	min-height: 45em;
+/*tailles de pages*/
 }
 .realtitle{
 	margin: 0;
@@ -259,13 +247,14 @@ footer{
 	font-weight: 400;
 	font-size: 2.7em;
 	text-align: center;
+	margin-top: 0.5em;
 } /*titre de page*/
 .align{
 	display: block;
 	text-align: center;
-	margin-bottom: 2em;
+	margin-bottom: 4em;
+	
 } /*banderole*/
-
 .realcolumn {
 	margin: 0;
 	text-align: center;
@@ -275,12 +264,10 @@ footer{
 	font-size: 16pt;
 	margin-bottom: 0.3em;
 }/*mon titre de realisation*/
-
 .textreal{
 	text-align: center;
 	display: block;
 }
-
 .blocrealorange{
 	width: 100%;
 	height: 0.4em;
@@ -291,7 +278,6 @@ footer{
 .annuletablerow{
 	display: inline-block;
 }
-
 /*au survol*/
 .ausurvolreal {
     position: relative;
@@ -317,9 +303,7 @@ footer{
     opacity: 0.8;
 }
 .monimg{	
-	
 }
-
 /*le bouton orange*/
 .btnrealstye {
 	color: orange;
@@ -332,10 +316,10 @@ a.btnrealstye.active:hover{
 .spacebtwrealfooter{
 	margin-bottom: 5em;
 }
-
-/*VIEW ONE PAGE ONE REAL*/
+/************************VIEW ONE PAGE ONE REAL**********************/
 .onepagereal{
-	
+	margin: 0 auto;
+	margin-top: 15em;
 }
 .blocreal{
 	/*width:30em;
@@ -345,7 +329,6 @@ a.btnrealstye.active:hover{
 .monimage{
 	width: 20em;
 	height: 20em;
-	margin: 18em 0em 0em 16em;
 }
 .monimage:hover  {
    /* transform: scale(1.2);*/
@@ -359,14 +342,10 @@ a.btnrealstye.active:hover{
 .texteonereal{
 	text-align: justify;
 }
-.realright{
-	margin-left: 2em;
-}
 .spacetitle {
-	margin-top: 11.6em;
 	margin-left: 0;
 }
-/********************************** Partenaires ****************************************/
+/********************************** PARTENAIRES ****************************************/
 .mespartenaires{
 	margin-bottom: 1em; 
 	text-align: center;
@@ -374,21 +353,22 @@ a.btnrealstye.active:hover{
 }
 #partenaires{
 	text-align: center;
-	min-height: 115em;
+	min-height: ;
 }
 .logoimg{ 
 	border: 0;
 	padding: 0;
-	margin: 0;
 	display: block;
-	height: 10em;
-	width : 10em;
+	text-align: center;
+	margin: 0 auto;
 }
 .partenairefigure {
     position: relative;
     display: inline-block;
     overflow: hidden;
     margin: 0;
+    height: 20em;
+    width: 15em;
 }
 img, .prestastyle {
     transition: all .25s ease;
@@ -421,12 +401,10 @@ img, .prestastyle {
 	color: white;
 }
 .sitename:hover{
-	color: white;
-	font-size: 16px;
+	color: orange;
+	font-size: 1.2em;
 }
-/******************
-	contact
-******************/
+/***********************************CONTACT**************************************/
 .imgcontact{
 	background:url(../img/contact4.jpg) no-repeat center center;
 	min-height: 58em;
@@ -450,9 +428,7 @@ img, .prestastyle {
     margin: 0;
 }
 
-/******************
-	footer
-******************/
+/**************************************FOOTER**************************************/
 .bas{
 	height: 5em;
 	text-align: center;
