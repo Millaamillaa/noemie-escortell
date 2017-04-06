@@ -60,8 +60,8 @@ footer{
     width: 1170px;
   }
 }
-@media screen and (max-width: 640px) {
-  .bloc {
+@media screen and (min-width: 640px) {
+	.bloc {
     display:block;
     clear:both;
   }
@@ -350,8 +350,17 @@ a.btnrealstye.active:hover{
 	margin-left: 0;
 }
 /********************************** PARTENAIRES ****************************************/
+.smaltitlepartenaire{
+	margin: 0;
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 1.7em;
+	margin-top: 0.5em;
+	text-decoration:underline;
+	color: orange;
+}
 .mespartenaires{
-	margin-bottom: 1em; 
+	margin-bottom:1em; 
 	text-align: center;
 	padding: 1em;
 }
@@ -371,7 +380,7 @@ a.btnrealstye.active:hover{
     display: inline-block;
     overflow: hidden;
     margin: 0;
-    height: 20em;
+    height: 15em;
     width: 15em;
 }
 img, .prestastyle {
@@ -397,6 +406,7 @@ img, .prestastyle {
 }
 .titlepartenaire{
 	color: orange;
+	margin-top: 2em;
 }
 .textpartenaire{
 

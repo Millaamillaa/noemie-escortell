@@ -3,10 +3,10 @@ include_once 'inc/header.php';
 ?>
 <!-- bloc 1-->
     <section id="partenaires">
-        <p class="bigtitlepresta"> PARTENAIRES </p>
-        
+        <p class="bigtitlepresta"> MES PARTENAIRES </p>
         <img src="img/prestation-soulignage-titre.png" alt="banderole">
         <br><br>
+        <p class="smaltitlepartenaire"> Partenaires de projets </p> 
         <div class="container">
             <div class="row">
                 <!-- presta 1 --> 
@@ -105,7 +105,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/A-8logo_pepito_nuage.jpg" alt="logo-pepito-nuage" width="100%"/>
+                            <img class="logoimg" src="img/A7-pepito.jpg" alt="logo-pepito-nuage" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> Pepito Mi Corazon </p>
                                 <p class="textpartenaire"> Collectif d’architectes </p>
@@ -144,24 +144,31 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="logo-" width="100%"/>
+                            <img class="logoimg" src="img/A-12zarts.jpg" alt="logo-" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Les Z’arts de Garonne</p>
+                                <p class="titlepartenaire"> Les Z’arts de Garonne </p>
                                 <p class="textpartenaire"> Association de diffusion culturelle  </p>
                                 <a class="sitename" href="http://www.djazzetgaronne.com/" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
                 </div> 
+            </div>
+        </div>
+        <br><br>
+        <!--les partenaires de projets-->
+    <p class="smaltitlepartenaire"> Partenaires de projets </p> 
+    <br><br>
+        <div class="container">
+            <div class="row">
                 <!-- presta 12 --> 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/B1-Begles.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
-                                <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.w3schools.com" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> La Ville de Bègles, le village urbain </p>
+                                <a class="sitename" href="http://www.mairie-begles.fr/" target="_blank"> VOIR LE SITE </a>
                             </figcaption>
                         </figure>
                     </div>
@@ -170,11 +177,10 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/B2-bordeauxmetropole.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
-                                <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.w3schools.com" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> La Métropole Bordelaise</p>
+                                <a class="sitename" href="http://www.bordeaux-metropole.fr/" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -183,11 +189,10 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/B3-Region-NouvelleAquitaine.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
-                                <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.w3schools.com" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> La Région Nouvelle Aquitaine</p>
+                                <a class="sitename" href="http://laregion-alpc.fr/" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -196,11 +201,10 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/B4-departementGironde.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
-                                <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.w3schools.com" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> Le Département de la Gironde</p>
+                                <a class="sitename" href="http://www.gironde.fr/" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -209,11 +213,11 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/B5-DLA.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
-                                <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.w3schools.com" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> La Direction Régionale et Départementale Jeunesse, Sport et Cohésion Sociale</p>
+                                <a class="sitename" target="_blank"
+                                href="http://nouvelle-aquitaine.drdjscs.gouv.fr/"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -222,11 +226,11 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/B5-DRJSCS.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
+                                <p class="titlepartenaire"> Le Dispositif Local D’accompagnement Aquitaine</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.w3schools.com" target="_blank"> VOIR LE SITE</a>
+                                <a class="sitename" href="http://www.dla-aquitaine.org/" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -235,11 +239,113 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/test.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/B6-Erasmus+.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> COOPÉRATIVE CO-ACTIONS</p>
+                                <p class="titlepartenaire"> Les Agences Erasmus + </p>
+                                <p class="textpartenaire">  Et Erasmus + Jeunesse et Sports </p>
+                                <a class="sitename" href="http://www.erasmusplus.fr/" target="_blank"> VOIR LE SITE</a>
+                                <a class="sitename" href="http://www.erasmusplus-jeunesse.fr/" target="_blank"> VOIR LE SITE</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!--les complices-->
+        <p class="smaltitlepartenaire"> Les complices </p> 
+    <br><br>
+        <div class="container">
+            <div class="row">
+                <!-- presta 12 --> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="mespartenaires">
+                        <figure class="partenairefigure">
+                            <img class="logoimg" src="img/C1-CecileMarsan.jpg" alt="vignette" width="100%"/>
+                            <figcaption class="prestastyle">
+                                <p class="titlepartenaire"> Cécile Marsan</p>
+                            <p class="textpartenaire"> Consultante projets européens
+                            [Ma complice Landaise] </p>
+                                <a class="sitename" href="http://www.co-actions.com/MARSAN-Cecile" target="_blank"> VOIR LE SITE </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- presta 13 --> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="mespartenaires">
+                        <figure class="partenairefigure">
+                            <img class="logoimg" src="img/.jpg" alt="vignette" width="100%"/>
+                            <figcaption class="prestastyle">
+                                <p class="titlepartenaire"> Anne Bui Van </p>
+                                  <p class="textpartenaire"> Consultante développement social et urbain </p>
+                                <a class="sitename" href="https://annebuivan.wordpress.com/" target="_blank"> VOIR LE SITE</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> 
+                <!-- presta 14 --> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="mespartenaires">
+                        <figure class="partenairefigure">
+                            <img class="logoimg" src="img/C3-julietteGiraud.jpg" alt="vignette" width="100%"/>
+                            <figcaption class="prestastyle">
+                                <p class="titlepartenaire"> Juliette Giraud </p>
+                                <p class="textpartenaire"> Ingénieuse culturelle </p>
+                                <a class="sitename" href="http://www.juliettegiraud.com/" target="_blank"> VOIR LE SITE</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> 
+                <!-- presta 15 --> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="mespartenaires">
+                        <figure class="partenairefigure">
+                            <img class="logoimg" src="img/B4-departementGironde.jpg" alt="vignette" width="100%"/>
+                            <figcaption class="prestastyle">
+                                <p class="titlepartenaire"> Le Département de la Gironde</p>
+                                  <p class="textpartenaire"> Union des acteurs de l’ESS en Sud Gironde </p>
+                                <a class="sitename" href="http://www.gironde.fr/" target="_blank"> VOIR LE SITE</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> 
+                <!-- presta 16 --> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="mespartenaires">
+                        <figure class="partenairefigure">
+                            <img class="logoimg" src="img/B5-DLA.jpg" alt="vignette" width="100%"/>
+                            <figcaption class="prestastyle">
+                                <p class="titlepartenaire"> La Direction Régionale et Départementale Jeunesse, Sport et Cohésion Sociale</p>
+                                  <p class="textpartenaire"> Union des acteurs de l’ESS en Sud Gironde </p>
+                                <a class="sitename" target="_blank"
+                                href="http://nouvelle-aquitaine.drdjscs.gouv.fr/"> VOIR LE SITE</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> 
+                <!-- presta 17 --> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="mespartenaires">
+                        <figure class="partenairefigure">
+                            <img class="logoimg" src="img/B5-DRJSCS.jpg" alt="vignette" width="100%"/>
+                            <figcaption class="prestastyle">
+                                <p class="titlepartenaire"> Le Dispositif Local D’accompagnement Aquitaine</p>
                                 <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.w3schools.com" target="_blank"> VOIR LE SITE</a>
+                                <a class="sitename" href="http://www.dla-aquitaine.org/" target="_blank"> VOIR LE SITE</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> 
+                <!-- presta 18 --> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="mespartenaires">
+                        <figure class="partenairefigure">
+                            <img class="logoimg" src="img/B6-Erasmus+.jpg" alt="vignette" width="100%"/>
+                            <figcaption class="prestastyle">
+                                <p class="titlepartenaire"> Les Agences Erasmus + </p>
+                                <p class="textpartenaire">  Et Erasmus + Jeunesse et Sports </p>
+                                <a class="sitename" href="http://www.erasmusplus.fr/" target="_blank"> VOIR LE SITE</a>
+                                <a class="sitename" href="http://www.erasmusplus-jeunesse.fr/" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
