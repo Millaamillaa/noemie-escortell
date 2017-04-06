@@ -1,9 +1,7 @@
 <?php 
 include_once 'inc/header.php';
 require_once 'inc/connect.php'; ?>
-    
-<div class="container">
-    <div class="row">
+
         <div class="presentation">
             <div class="centrage">
                <p class="titlepres"> ACCOMPAGNEMENT AU MONTAGE DE PROJETS DE COOPÉRATION ET PARTENARIATS EUROPÉENS </p>
@@ -31,8 +29,7 @@ require_once 'inc/connect.php'; ?>
                 </p>
             </div>
         </div>
-    </div>
-</div>
+  
 <!-- <img class="pailletter" src="img/p1-paillette-droite.png" alt="Paillette décorative"/>  -->
 
 <?php

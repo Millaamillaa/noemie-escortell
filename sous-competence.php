@@ -13,10 +13,10 @@ require_once 'inc/header.php';
                     <div class="centerunderview">
                     	<img class="prestapicto" src="img/competence.png" alt="competences"> <!-- picto 1 -->
                         <p class="titlepresta"> COOPÉRATION INTERRÉGIONALE ET EUROPEENNE </p>
-                        <p class="textunder"> ► Gestion et coordination de projet <br>
-                        ► Formation des acteurs de l’Economie Sociales et Solidaire   <br>
-                        ► Etudes et assistance à maîtrise d’ouvrage <p>
-                        <br>
+                        <p class="textunder"> 
+                        ► Conception, développement et coordination de projet <br> 
+                        ► Formation des acteurs de l’Economie Sociales et Solidaire <br> 
+                        ► Etudes et assistance à maîtrise d’ouvrage <br> 
                         <a href="demarches.php" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux démarches</a>
                     </div>
                 </div>

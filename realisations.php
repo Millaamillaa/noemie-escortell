@@ -31,10 +31,11 @@ require_once 'inc/connect.php';
             echo '<figcation>';
             echo '</figure>';
         	// En récupérant l'id de la realisation, je peux le passer en GET afin d'avoir un seul et même fichier pour lire chaque realisation individuellement 
+            echo '<br>';
+            echo '<a class="btnrealstye active" role="button" aria-pressed="true" href="read-realisation.php?id='.$real['id'].'"> Voir + </a>';	
             echo '<br><br>';
-            echo '<a class="btnrealstye active" role="button" aria-pressed="true" href="read-realisation.php?id='.$real['id'].'"> Voir cette réalisation </a>';	
-            echo '<br><br>';
-        	echo '</div>'; 
+            echo '</div>'; 
+        	
         }
         ?>
     </div>

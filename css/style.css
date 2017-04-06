@@ -306,11 +306,15 @@ footer{
 }
 /*le bouton orange*/
 .btnrealstye {
-	color: orange;
-	font-size: 1.2em;
+	color: black;
+	font-size: 1em;
+	text-align: right;
+	position:relative;
+	right:-7em;
+	font-weight: bold;
 }
 a.btnrealstye.active:hover{
-	color:black;
+	color:orange;
 	text-decoration-line: none;
 } /*supprimer les couleurs et surlignage du survol du lien*/
 .spacebtwrealfooter{
@@ -430,7 +434,7 @@ img, .prestastyle {
 
 /**************************************FOOTER**************************************/
 .bas{
-	height: 5em;
+	height: 10em;
 	text-align: center;
     font-size: 1.2em;
     background-color: #F3EFEB;
