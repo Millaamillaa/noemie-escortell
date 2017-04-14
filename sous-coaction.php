@@ -1,16 +1,17 @@
-<?php 
+ <?php 
 require_once 'inc/header.php';
 ?>
  
 <!-- bloc 1-->
     <section id="prestation">
-        <p class="titleunderview"> COUT DES PRESTATIONS ET DEVIS </p>
+        <p class="titleunderview"> PRESTATIONS </p>
         <img src="img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
         <div class="insideunderview">
             <div class="container">
                 <div class="row">
                     <div class="centerunderview">
                         <img class="prestapicto" src="img/prestation-picto-3.png" alt="vignette">
+                        <p class="titlepresta"> COÛT DES PRESTATIONS ET DEVIS </p>
                         <p class="textunder"> 
                         Pour toute demande de devis relatif à une prestation d’accompagnement ou de formation, je vous invite à me contacter afin que nous échangions sur vos besoins nescortell@co-actions.fr <br>
 
@@ -20,6 +21,7 @@ require_once 'inc/header.php';
 
                         </p>
                         <a href="prestations.php" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux prestations</a>
+                        <br><br>
                     </div>
                 </div>
             </div>

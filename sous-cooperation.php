@@ -3,14 +3,15 @@ require_once 'inc/header.php';
 ?>
  
 <!-- bloc 1-->
-    <section id="prestation">
-        <p class="titleunderview"> COOPÉRATION INTERREGIONALE ET EUROPÉENNE  </p>
+    <section id="prestation"> 
+        <p class="titleunderview"> PRESTATION </p>
         <img src="img/prestation-soulignage-titre.png" alt="vignette"> <!-- image banderole -->
         <div class="insideunderview">
             <div class="container">
                 <div class="row">
                     <div class="centerunderview">
                     	<img class="prestapicto" src="img/prestation-picto-1.png" alt="vignette">
+                        <p class="titlepresta"> COOPÉRATION INTERREGIONALE ET EUROPÉENNE </p>
                         <p class="textunder"> 
                         Convaincue de la nécessité aujourd'hui pour les associations, entreprises, coopératives et plus largement les structures de l'Économie Sociale Solidaire de développer leurs projets dans une dynamique de coopération, je propose un service de conseil et d’appui technique au développement de projets.
                         <br>
@@ -22,6 +23,7 @@ require_once 'inc/header.php';
                         <br>
                         </p>
                         <a href="prestations.php" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux prestations</a>
+                        <br><br>
                     </div>
                 </div>
             </div>

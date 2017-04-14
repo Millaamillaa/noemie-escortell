@@ -14,7 +14,7 @@ require_once 'inc/connect.php';
                 <br>
                 <i class="fa fa-phone" aria-hidden="true"></i>  +33 (0)6 11 02 61 49
                 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i>  nescortell@co-actions.fr 
+                <i class="fa fa-envelope" aria-hidden="true"></i>  nescortell(@)co-actions.fr 
                 <br><br>
                 <a target="_blank" href="https://www.facebook.com/people/Noémie-Escortell/100011998247624"> 
                     <i class="fa fa-facebook-square" style="font-size:4em; color: white; "></i> 

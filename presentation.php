@@ -5,6 +5,7 @@ require_once 'inc/connect.php'; ?>
         <div class="presentation">
             <div class="centrage">
                <p class="titlepres"> ACCOMPAGNEMENT AU MONTAGE DE PROJETS DE COOPÉRATION ET PARTENARIATS EUROPÉENS </p>
+               <br><br>
                 <p class="textpres">
                 Très active dans le monde associatif depuis plus de 15 ans, j’ai toujours eu à cœur d’associer un parcours en coordination de projet à une approche de développement local. Mon intérêt pour les projets innovants, les dynamiques partenariales et l’interculturalité m’a amené à me spécialiser dans <strong> les projets de coopération et partenariats européens. </strong>
                 <br><br>
@@ -30,7 +31,7 @@ require_once 'inc/connect.php'; ?>
             </div>
         </div>
   
-<!-- <img class="pailletter" src="img/p1-paillette-droite.png" alt="Paillette décorative"/>  -->
+<img class="pailletter" src="img/p1-paillette-droite.png" alt="Paillette décorative"/> 
 
 <?php
 include_once 'inc/footer.php';

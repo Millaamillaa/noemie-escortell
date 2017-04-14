@@ -31,7 +31,7 @@ include_once 'inc/header.php';
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="mes picto">
                         	<img class="prestapicto" src="img/prestation-picto-3.png" alt="vignette"> <!-- picto  3-->
-                            <p class="titlepresta"> COUT DES PRESTATIONS <br> ET DEVIS </p> 
+                            <p class="titlepresta"> COÛT DES PRESTATIONS <br> ET DEVIS </p> 
                             <p class="textpresta"> Mon réseau de partenaires et mes ... </p>
                             <a href="sous-coaction.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
                         </div>

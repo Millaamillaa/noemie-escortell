@@ -3,7 +3,7 @@ include_once 'inc/header.php';
 ?> 
 <!-- bloc 1-->
     <section id="prestation">
-        <p class="bigtitlepresta"> DÉMARCHES </p>
+        <p class="bigtitlepresta"> DÉMARCHE </p>
         <img src="img/prestation-soulignage-titre.png" alt="vignette"> <!-- démarche -->
         <div class="sizemiddle">
             <div class="container">

@@ -300,11 +300,11 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/B4-departementGironde.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Le Département de la Gironde</p>
-                                  <p class="textpartenaire"> Union des acteurs de l’ESS en Sud Gironde </p>
-                                <a class="sitename" href="http://www.gironde.fr/" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> Delphine Empio </p>
+                                  <p class="textpartenaire"> Création, conseil et développement de projet  </p>
+                                <a class="sitename" href="lafabriquesinguliere.tumblr.com" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -313,12 +313,12 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/B5-DLA.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/C4-CedricPellissier.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> La Direction Régionale et Départementale Jeunesse, Sport et Cohésion Sociale</p>
-                                  <p class="textpartenaire"> Union des acteurs de l’ESS en Sud Gironde </p>
+                                <p class="titlepartenaire"> Cédric Pellissier</p>
+                                  <p class="textpartenaire"> Consultant - Accompagnement en Politiques Publiques </p>
                                 <a class="sitename" target="_blank"
-                                href="http://nouvelle-aquitaine.drdjscs.gouv.fr/"> VOIR LE SITE</a>
+                                href="https://ecappblog.wordpress.com/author/cedricpellissier/"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -327,11 +327,11 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/B5-DRJSCS.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Le Dispositif Local D’accompagnement Aquitaine</p>
-                                <p class="textpartenaire"> Coopératives d'activité et d'entrepreneurs </p>
-                                <a class="sitename" href="http://www.dla-aquitaine.org/" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> Lisa Ratto </p>
+                                <p class="textpartenaire"> Graphiste et Illustratrice [La création de mon identité visuelle et du web design de ce site, c’est elle !] </p>
+                                <a class="sitename" href="http://lougraphisme.com/" target="_blank"> VOIR LE SITE</a> 
                             </figcaption>
                         </figure>
                     </div>
@@ -340,12 +340,12 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/B6-Erasmus+.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/C6-myriam.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Les Agences Erasmus + </p>
-                                <p class="textpartenaire">  Et Erasmus + Jeunesse et Sports </p>
-                                <a class="sitename" href="http://www.erasmusplus.fr/" target="_blank"> VOIR LE SITE</a>
-                                <a class="sitename" href="http://www.erasmusplus-jeunesse.fr/" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> Millaa Millaa </p>
+                                <p class="textpartenaire">  Web développeuse [La réalisation de ce site, c’est elle !] </p>
+                                <a class="sitename" href="https://www.linkedin.com/in/myriam-bugnazet-5a75b0133/" target="_blank"> VOIR LE SITE</a>
+                                
                             </figcaption>
                         </figure>
                     </div>
