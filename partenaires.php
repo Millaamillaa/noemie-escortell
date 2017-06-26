@@ -63,18 +63,18 @@ include_once 'inc/header.php';
                     </div>
                 </div> 
                 <!-- presta 5 --> 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/A-5logo-laba.jpg" alt="logo-laba" width="100%"/>
+                            <img class="logoimg" src="img/A-12zarts.jpg" alt="logo-" width="100%"/>
                             <figcaption class="prestastyle">
-                                <p class="titlepartenaire">  Le LABA  </p>
-                                <p class="textpartenaire"> Pôle de compétences Culture Aquitain </p>
-                                <a class="sitename" href="http://lelaba.eu/" target="_blank"> VOIR LE SITE</a>
+                                <p class="titlepartenaire"> Les Z’arts de Garonne </p>
+                                <p class="textpartenaire"> Association de diffusion culturelle  </p>
+                                <a class="sitename" href="http://www.djazzetgaronne.com/" target="_blank"> VOIR LE SITE</a>
                             </figcaption>
                         </figure>
                     </div>
-                </div> 
+                </div>
                 <!-- presta 6 --> 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
@@ -141,18 +141,7 @@ include_once 'inc/header.php';
                     </div>
                 </div> 
                 <!-- presta 11 --> 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="mespartenaires">
-                        <figure class="partenairefigure">
-                            <img class="logoimg" src="img/A-12zarts.jpg" alt="logo-" width="100%"/>
-                            <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Les Z’arts de Garonne </p>
-                                <p class="textpartenaire"> Association de diffusion culturelle  </p>
-                                <a class="sitename" href="http://www.djazzetgaronne.com/" target="_blank"> VOIR LE SITE</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> 
+                
             </div>
         </div>
         <br><br>
@@ -274,7 +263,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/C2-Anne-Bui-Van.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> Anne Bui Van </p>
                                   <p class="textpartenaire"> Consultante développement social et urbain </p>
@@ -287,47 +276,7 @@ include_once 'inc/header.php';
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">
-                            <img class="logoimg" src="img/C3-julietteGiraud.jpg" alt="vignette" width="100%"/>
-                            <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Juliette Giraud </p>
-                                <p class="textpartenaire"> Ingénieuse culturelle </p>
-                                <a class="sitename" href="http://www.juliettegiraud.com/" target="_blank"> VOIR LE SITE</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> 
-                <!-- presta 15 --> 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="mespartenaires">
-                        <figure class="partenairefigure">
-                            <img class="logoimg" src="img/.jpg" alt="vignette" width="100%"/>
-                            <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Delphine Empio </p>
-                                  <p class="textpartenaire"> Création, conseil et développement de projet  </p>
-                                <a class="sitename" href="lafabriquesinguliere.tumblr.com" target="_blank"> VOIR LE SITE</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> 
-                <!-- presta 16 --> 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="mespartenaires">
-                        <figure class="partenairefigure">
-                            <img class="logoimg" src="img/C4-CedricPellissier.jpg" alt="vignette" width="100%"/>
-                            <figcaption class="prestastyle">
-                                <p class="titlepartenaire"> Cédric Pellissier</p>
-                                  <p class="textpartenaire"> Consultant - Accompagnement en Politiques Publiques </p>
-                                <a class="sitename" target="_blank"
-                                href="https://ecappblog.wordpress.com/author/cedricpellissier/"> VOIR LE SITE</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> 
-                <!-- presta 17 --> 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="mespartenaires">
-                        <figure class="partenairefigure">
-                            <img class="logoimg" src="img/.jpg" alt="vignette" width="100%"/>
+                            <img class="logoimg" src="img/C3-lisa.jpg" alt="vignette" width="100%"/>
                             <figcaption class="prestastyle">
                                 <p class="titlepartenaire"> Lisa Ratto </p>
                                 <p class="textpartenaire"> Graphiste et Illustratrice [La création de mon identité visuelle et du web design de ce site, c’est elle !] </p>
@@ -336,7 +285,7 @@ include_once 'inc/header.php';
                         </figure>
                     </div>
                 </div> 
-                <!-- presta 18 --> 
+                <!-- presta 15 --> 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="mespartenaires">
                         <figure class="partenairefigure">

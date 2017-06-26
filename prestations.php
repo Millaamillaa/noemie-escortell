@@ -13,7 +13,7 @@ include_once 'inc/header.php';
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="mespicto">
                         	<img class="prestapicto" src="img/prestation-picto-1.png" alt="vignette"> <!-- picto 1 -->
-                            <p class="titlepresta"> COOPÉRATION INTERRÉGIONALE <br> ET EUROPEENNE </p>
+                            <p class="titlepresta"> COOPÉRATION TERRITORIALE ET <br> COOPERATION INTERNATIONALE </p>
                             <p class="textpresta"> Convaincue de la nécessité aujourd'hui pour ... </p>
                             <a href="sous-cooperation.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
                         </div>
@@ -33,7 +33,7 @@ include_once 'inc/header.php';
                         	<img class="prestapicto" src="img/prestation-picto-3.png" alt="vignette"> <!-- picto  3-->
                             <p class="titlepresta"> COÛT DES PRESTATIONS <br> ET DEVIS </p> 
                             <p class="textpresta"> Mon réseau de partenaires et mes ... </p>
-                            <a href="sous-coaction.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
+                            <a href="sous-coutpresta.php"><img class="boutonplus" src="img/btn-ensavoirplus.png"></a> <!-- en savoir plus image -->
                         </div>
                     </div>
                 </div>

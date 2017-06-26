@@ -15,13 +15,12 @@ require_once 'inc/connect.php'; ?>
 // 	    echo '<img class="" src="img/'.$resume['image'].'">';
 // 	} -->
 
-<div class="btnloadcv"> 
-<p class="textcv">Pour télécharger ou imprimer mon CV</p>
-<a target="_blank" href="img/cv.pdf"><button type="button" class="btn btn-warning">	Lien CV </button></a>
-</div>
-<div class="lecv"></div>
-<div class="lecv2"></div>
-
+<iframe class="cv" src="img/cv.pdf" ></iframe>
+<center><object class="cvmobile" data="cv.pdf" type="application/pdf">
+  lien alternatif : <a href="img/cv.pdf" target="_blank">affichage cv</a>
+</object>
+</center>
+<br>
 <?php
 include_once 'inc/footer.php';
 ?>

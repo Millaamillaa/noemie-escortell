@@ -12,7 +12,7 @@ require_once 'inc/header.php';
                     <!-- picto 1 --> 
                     <div class="centerunderview">
                     	<img class="prestapicto" src="img/demarche.png" alt="vignette"> <!-- picto 1 -->
-                        <p class="titlepresta"> MA DÉMARCHE </p>
+                        <p class="titlepresta"> APPROCHE </p>
                         <p class="textunder"> 
                         Parce qu'un projet réussi est un projet partagé, j’attache une attention particulière à <br>l’implication et la participation de l’ensemble des parties prenantes du projet dans sa <br>mise en œuvre. 
                         Mon rôle est de faciliter le positionnement de la structure et son autonomie.
@@ -35,7 +35,7 @@ require_once 'inc/header.php';
                         ► 4. Formaliser <br>
                         ► 5. Mettre en œuvre 
                         </p>
-                        <a href="demarches.php" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux démarches</a>
+                        <a href="demarches.php" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour à Démarche</a>
                         <br><br>
                     </div>
                 </div>

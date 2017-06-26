@@ -9,7 +9,7 @@ require_once 'inc/connect.php'; ?>
                 <p class="textpres">
                 Très active dans le monde associatif depuis plus de 15 ans, j’ai toujours eu à cœur d’associer un parcours en coordination de projet à une approche de développement local. Mon intérêt pour les projets innovants, les dynamiques partenariales et l’interculturalité m’a amené à me spécialiser dans <strong> les projets de coopération et partenariats européens. </strong>
                 <br><br>
-                Depuis 2015, au sein de la Coopérative CO-ACTIONS, je propose un service d’accompagnement des porteurs de projets dans l’ingénierie de projets de coopération que ce soit à l’échelle interrégionale ou européenne. 
+                Depuis 2015, au sein de la Coopérative CO-ACTIONS, je propose un service d’accompagnement des porteurs de projets dans l’ingénierie de projets de coopération que ce soit à l’échelle <strong>territoriale ou européenne</strong>. 
                 <br><br>
                 <strong>Le service</strong> que je propose se décline en plusieurs phases : 
                 diagnostic de la structure,  définition d’une stratégie de coopération 
@@ -21,12 +21,13 @@ require_once 'inc/connect.php'; ?>
                 <br><br>
                 Je suis…
                 <br>
-                Entrepreneure-salariée-associée au sein de <strong>la coopérative CO-ACTIONS</strong> <a href="http://www.co-actions.com/" target="_blank">
-                Le site co-actions</a>
-                <br>
-                Experte-évaluatrice externe pour <strong>l’Agence Erasmus+</strong> 
-                <a href="http://www.erasmusplus-jeunesse.fr/" target="_blank">
-                Le site erasmusplus</a> <!-- target blank = ouverture du site dans un autre onglet -->
+                ► Entrepreneure-salariée-associée au sein de <a class="linkprestenta" href="http://www.co-actions.com/" target="_blank"><strong>la coopérative CO-ACTIONS</strong></a>
+                <br><br>
+                ► Membre du collectif de consultants de
+                <a class="linkprestenta href=" http://co-actions.coop/nos-metiers/ingenierie-ess/" target="_blank">
+                <strong>l’économie sociale et solidaire</strong></a>
+                <br><br>
+                ► Experte-évaluatrice externe pour <a class="linkprestenta" href="http://www.erasmusplus-jeunesse.fr/" target="_blank"><strong>l’Agence Erasmus+</strong> </a> <!-- target blank = ouverture du site dans un autre onglet -->
                 </p>
             </div>
         </div>

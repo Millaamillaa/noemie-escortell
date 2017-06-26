@@ -121,34 +121,23 @@ footer{
 	width: 100%;
 	height: 0.6em;
 	background-color: orange;
-	padding-top: 0.5em;
+	margin: 0;
 }
 .endhome{
 	margin-bottom: 4em;
 }
 /****************************************PARCOURS***************************************/
-.btnloadcv{
-	margin-top: 2em;
-	text-align: center;
+
+.cv{
+	margin: 5em 5em 5em 5em;
+	width: 100em; 
+	height: 70em; 
+	vertical-align: middle;
 }
-.textcv{
-	font-size: 1.4em;
+.cvmobile{
+	font-size: 2em;
 }
-.lecv{
-	height: 150em;
-	width: auto;
-	background:url(../img/cv-1.jpg) no-repeat center center;
-	background-size: contain; /* version standardisée */
-	-webkit-background-size: contain; /* pour anciens Chrome et Safari */
-}
-.lecv2{
-	height: 150em;
-	width: auto;
-	background:url(../img/cv-2.jpg) no-repeat center center;
-	background-size: contain; /* version standardisée */
-	-webkit-background-size: contain; /* pour anciens Chrome et Safari */
-	margin-bottom: 4em;
-}
+
 /****************************************PRÉSENTATION****************************************/
 .presentation{
 	height: 58em;	
@@ -172,7 +161,9 @@ footer{
   	right: 0;
     position: absolute;
 }
-
+.linkprestenta{
+	color: black;	
+}
 /****************************************PRESTA / DEMARCHES****************************************/
 .pailletteleft{
 	float: left;
@@ -426,21 +417,32 @@ img, .prestastyle {
 	color: orange;
 	font-size: 1.2em;
 }
+.sitedla{
+	color: black;
+}
+.sitedla:hover{
+	color: orange;
+	font-size: 1.2em;
+}
 /***********************************CONTACT**************************************/
 .imgcontact{
-	background:url(../img/contact4.jpg) no-repeat center center;
-	min-height: 58em;
+	background:url(../img/contactpaperold2.jpg) no-repeat center center;
+	min-height: 66em;
 	width: auto;
 	background-size: cover;
+	opacity: ;
+}
+.gif{
+	width: auto;
+	height: 30em;
+	margin-right: 5em;
 }
 .textcontact{
-	font-size: 2em;
+	font-size: 1.7em;
 }
 .contact{
-	padding-top: 1em;
 	opacity: 1;
-	color: white;
-	text-align: center;
+	color: black;
 }
 .titlecontact{  
     font-family: "Oswald", sans-serif;
@@ -449,7 +451,10 @@ img, .prestastyle {
     text-align: center;
     margin: 0;
 }
-
+.photonoemie{
+	width: auto;
+	height: 10em;
+}
 /**************************************FOOTER**************************************/
 .bas{
 	height: 10em;
@@ -459,7 +464,10 @@ img, .prestastyle {
     padding: 2em;
     color: black;
 }
- 
- 
-
+.facebookicone{
+	margin-right: 3em;
+}
+.typofooter{
+	color: orange;
+}
 

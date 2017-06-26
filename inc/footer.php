@@ -2,7 +2,23 @@
 
 <footer class="bas">
 <br>
-    <p> ® 2016 - Noemie Escortell &reg;</p>
+
+
+
+ <!-- presta 1 --> 
+	<div class="">
+		<p class="typofooter"> 2017 - Noemie Escortell &reg;</p>
+		<p > <strong>RETROUVEZ MOI SUR : </strong></p>
+		<!-- les icones -->
+		<a class="facebookicone" target="_blank" href="https://www.facebook.com/people/Noémie-Escortell/100011998247624"> 
+			<i class="fa fa-facebook-square" style="font-size:4em; color: orange; "></i> 
+		</a> 
+		<a target="_blank" href="https://twitter.com/NoemieEscortell"> 
+			<i class="fa fa-twitter-square" style="font-size:4em; color: orange;"></i>
+		</a>
+	</div>
+
+           
 </footer>
 
 <!--mettre jquery pour les fonction barre nav avant bootsrap : aller sur jquery - google CDN -prendre jQuery 2.x (dernière version)  -->

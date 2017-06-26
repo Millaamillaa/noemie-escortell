@@ -17,6 +17,8 @@ require_once 'inc/header.php';
                             <br>
 							</p>
                         <a href="prestations.php" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Retour aux démarches</a>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
